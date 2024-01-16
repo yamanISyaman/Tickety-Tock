@@ -1,0 +1,261 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as current_language %}
+
+<!DOCTYPE html>
+<html lang="{{ current_language|default:'en' }}">
+
+<!-- tickety -tock/  30 Nov 2019 03:42:43 GMT -->
+<head>
+<meta charset="utf-8">
+<title>{% block title %}{% endblock %}</title>
+<!-- Stylesheets -->
+<link href="{% static 'website/css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'website/css/style.css' %}" rel="stylesheet">
+<link href="{% static 'website/css/responsive.css' %}" rel="stylesheet">
+
+<link rel="shortcut icon" href="{% static 'website/images/favicon.png' %}" type="image/x-icon">
+<link rel="icon" href="{% static 'website/images/favicon.png' %}" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="{% static 'website/js/respond.js' %}"></script><![endif]-->
+</head>
+
+<body>
+
+{% if current_language == "ar" %}
+    <style>
+        body {
+            text-align: right;
+        }
+        
+        .logo-outer {
+            text-align: left;
+        }
+
+        .main-footer .footer-widget h2:after {
+            right: 0px;
+            left: auto;
+        }
+
+        
+        .main-footer .logo-widget .text {
+            padding-right: 0px;
+        }
+
+        .newsletter-form .form-group input[type="email"] {
+            direction: rtl;
+        }
+
+
+        .main-menu .navigation {
+            transform: rotate(180deg);
+        }
+
+        .main-menu .navigation > li {
+            transform: rotate(-180deg);
+        }
+
+        @media only screen and (max-width: 767px) {
+            .main-header .header-upper .logo-outer {
+                text-align: left;
+            }
+        }
+
+    {% block style %}{% endblock %}
+        
+    </style>
+{% endif %}
+
+<div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <header class="main-header header-style-one">
+
+        <!-- Header Upper -->
+        <div class="header-upper">
+            <div class="inner-container">
+                <div class="auto-container clearfix" style="display: flex; justify-content: space-between;">
+                    <!--Info-->
+                    <div class="r-arfloat logo-outer">
+                        <div class="logo"><a href="{% url 'index' %}"><img src="{% static 'website/images/logo.png' %}" alt="" title=""/></a></div>
+                    </div>
+
+                    <!--Nav Box-->
+                    <div class="l-arfloat nav-outer clearfix">
+                        <!--Mobile Navigation Toggler For Mobile--><div class="mobile-nav-toggler"><span class="icon flaticon-menu-1"></span></div>
+                        <nav class="main-menu navbar-expand-md navbar-light">
+                            <div class="navbar-header">
+                                <!-- Togg le Button -->      
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="icon flaticon-menu-1"></span>
+                                </button>
+                            </div>
+
+                            <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li class="current dropdown"><a href="{% url 'index' %}">{% trans "Home" %}</a>
+                                    </li>
+                                    <li class="dropdown"><a href="about.html">{% trans "About us" %}</a>
+                                    </li>
+                                    <li class="dropdown"><a href="{% url 'products' %}">{% trans "Products" %}</a>
+                                    </li>
+                                    <li class="dropdown"><a href="blog.html">{% trans "Blog" %}</a>
+                                    </li>
+                                    <li class="dropdown"><a href="contact.html">{% trans "Contact" %}</a></li>
+                                    <li class="dropdown"><a href={% if current_language == "en" %}"/ar/{{ request.get_full_path|slice:'4:' }}">العربية{% else %}"/en/{{ request.get_full_path|slice:'4:' }}">English{% endif %}</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+
+                        <!-- Outer Box -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><span class="icon flaticon-cancel"></span></div>
+
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="index-2.html"><img src="{% static 'website/images/logo.png' %}" alt="" title=""></a></div>
+                <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
+                <!--Social Links-->
+                <div class="social-links">
+                    <ul class="clearfix">
+                        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                        <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                        <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
+                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                        <li><a href="#"><span class="fab fa-youtube"></span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div><!-- End Mobile Menu -->
+
+    </header>
+    <!-- End Main Header -->
+    
+    {% block body %}
+    {% endblock %}
+
+    <!--Main Footer-->
+        <footer class="main-footer">
+            <div class="auto-container">
+                <!--Widgets Section-->
+                <div class="widgets-section">
+                    <div class="row clearfix">
+
+                        <!--big column-->
+                        <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                            <div class="row clearfix">
+
+                                <!--Footer Column-->
+                                <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                                    <div class="footer-widget logo-widget">
+                                        <div class="logo">
+                                            <a href="index-2.html"><img src="{% static 'website/images/logo.png' %}" alt="" style="max-width: 30%;"/></a>
+                                        </div>
+                                        <div class="text">{% trans "Tickety Tock was opened in 1975 as one small store and every year our name is spreading wider and wider" %}</div>
+                                        <ul class="social-icons">
+                                            <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                            <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                            <li><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!--Footer Column-->
+                                <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                                    <div class="footer-widget links-widget">
+                                        <h2>{% trans "Quick links" %}</h2>
+                                        <div class="widget-content">
+                                            <ul class="list">
+                                                <li><a href="#">{% trans "Our History" %}</a></li>
+                                                <li><a href="#">{% trans "Careers" %}</a></li>
+                                                <li><a href="#">{% trans "Website Map" %}</a></li>
+                                                <li><a href="#">{% trans "FAQ" %}</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--big column-->
+                        <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                            <div class="row clearfix">
+
+                                <!--Footer Column-->
+                                <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                                    <div class="footer-widget contact-widget">
+                                        <h2>{% trans "Contact Info" %}</h2>
+                                        <div class="widget-content">
+                                            <a href="tel:0" class="contact-number">+963 912341234</a>
+                                            <ul>
+                                                <li>{% trans "Damascus Suburbs" %}</li>
+                                                <li>Email :<a href="mailto:info@ticketytock.com"> info@ticketytock.com</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Footer Column-->
+                                <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                                    <div class="footer-widget newsletter-widget">
+                                        <h2>{% trans "Newsletter" %}</h2>
+                                        <div class="text">{% trans "Stay in touch with our latest news and products" %}</div>
+                                        <!-- Newsletter Form -->
+                                        <div class="newsletter-form">
+                                            <form method="post" action="#">
+                                                <div class="form-group">
+                                                    <input type="email" name="email" value="" placeholder="{% trans 'Enter your email address' %}" required>
+                                                    <button type="submit" class="theme-btn btn-style-one"><span class="txt">{% trans "Subscribe" %}</span></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+    </div>  
+    <!--End pagewrapper-->
+
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+    <!--Scroll to top-->
+    <script src="{% static 'website/js/jquery.js' %}"></script>
+    <script src="{% static 'website/js/popper.min.js' %}"></script>
+    <script src="{% static 'website/js/jquery-ui.js' %}"></script>
+    <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'website/js/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'website/js/isotope.js' %}"></script>
+    <script src="{% static 'website/js/owl.js' %}"></script>
+    <script src="{% static 'website/js/wow.js' %}"></script>
+    <script src="{% static 'website/js/appear.js' %}"></script>
+    <script src="{% static 'website/js/scrollbar.js' %}"></script>
+    {% block script %}
+    {% endblock %}
+    <script src="{% static 'website/js/script.js' %}"></script>
+    </body>
+
+</html>

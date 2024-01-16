@@ -1,0 +1,211 @@
+{% extends 'website/layout.html' %}
+{% load static %}
+{% load i18n %}
+{% get_current_language as current_language %}
+
+{% block title %}{% trans "Tickety Tock - Products" %}{% endblock %}
+
+
+{% block style %}
+{% if current_language == "ar" %}
+
+    page-title, .product-details .info-column {
+        text-align: right;
+    }
+    
+    .product-details .info-column, .shop-single .product-details .prod-tabs .tab-btns, .shop-single .product-details .prod-tabs .tabs-content .tab {
+        direction: rtl;
+    }
+
+    .related-products .title-box h2:before {
+        right: 100%;
+        left: auto;
+    }
+
+    .basic-details .row {
+        flex-direction: row-reverse;
+    }
+
+    
+
+{% endif %}
+{% endblock %}
+
+
+
+{% block body %}
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'website/images/background/5.jpg' %})">
+    	<div class="auto-container">
+        	<h2>Product Details</h2>
+        </div>
+    </section>
+    <!--End Page Title-->
+	
+	<!--Shop Single Section-->
+    <section class="shop-single-section">
+    	<div class="auto-container">
+        	
+            <div class="shop-single">
+                <div class="product-details">
+                    
+                    <!--Basic Details-->
+                    <div class="basic-details">
+                        <div class="row clearfix">
+                            <div class="image-column col-lg-4 col-md-4 col-sm-4">
+                                <figure class="image-box"><a href="{% static 'website/images/resource/products/9.jpg' %}" class="lightbox-image" title="Image Caption Here"><img src="{% static 'website/images/resource/products/9.jpg' %}" alt=""></a></figure>
+                            </div>
+                            <div class="info-column col-lg-8 col-md-8 col-sm-8">
+                            	<div class="inner-column">
+                                    <h4>{% trans 'Watch name' %}</h4>
+                                    <div class="text">{% trans 'summary summary summary' %}</div>
+                                    <div class="short">{% trans 'Brand' %} : <span><img src="/media/brands/test.png" alt="nameofwatch" style="max-height: 2rem; background-color: #ffffff;"></span></div>
+                                    <div class="short">{% trans 'Colors' %} : <span>{% trans 'grey' %}</span></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Basic Details-->
+                    
+                    <!--Product Info Tabs-->
+                    <div class="product-info-tabs">
+                        <!--Product Tabs-->
+                        <div class="prod-tabs tabs-box">
+                        
+                            <!--Tab Btns-->
+                            <ul class="tab-btns tab-buttons clearfix">
+                                <li data-tab="#prod-rcmd" class="tab-btn active-btn">{% trans 'Description' %}</li>
+                                <li data-tab="#prod-ftr" class="tab-btn">{% trans 'Specification' %}</li>
+                            </ul>
+                            
+                            <!--Tabs Container-->
+                            <div class="tabs-content">
+                                
+                                <!--Tab / Active Tab-->
+                                <div class="tab active-tab" id="prod-rcmd">
+                                    <div class="content">
+                                        <p>{% trans ' something something something something something something something something something something something' %}</p>
+                                    </div>
+                                </div>
+                                
+                                <!--Tab-->
+                                <div class="tab" id="prod-ftr">
+                                    <div class="content">
+                                        <p>{% blocktrans %}  something something something something something something something something something something something something{% endblocktrans %}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--End Product Info Tabs-->
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!--End Shop Single Section-->
+	
+	<!-- Related Products -->
+	<section class="related-products">
+        <div class="auto-container">
+            <!--Sec Title-->
+            <div class="title-box">
+            	<h2>{% trans 'Related Products' %}</h2>
+            </div>
+            
+            <div class="row clearfix">
+				
+				<!--Shop Item-->
+                <div class="shop-item col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <a href="product-detail.html"><img src="{% static 'website/images/resource/products/2.jpg' %}" alt="" /></a>
+                            <div class="overlay-box">
+                                <ul class="option-box">
+                                    <li><a href="#"><span class="far fa-heart"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-shopping-bag"></span></a></li>
+                                    <li><a href="{% static 'website/images/resource/products/2.jpg' %}" class="lightbox-image" data-fancybox="products"><span class="fa fa-search"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="product-detail.html">SIDE-TIE TANK</a></h3>
+                            <div class="price">$39.32</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Shop Item-->
+                <div class="shop-item col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <a href="product-detail.html"><img src="{% static 'website/images/resource/products/3.jpg' %}" alt="" /></a>
+                            <div class="overlay-box">
+                                <ul class="option-box">
+                                    <li><a href="#"><span class="far fa-heart"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-shopping-bag"></span></a></li>
+                                    <li><a href="{% static 'website/images/resource/products/3.jpg' %}" class="lightbox-image" data-fancybox="products"><span class="fa fa-search"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="product-detail.html">COLD CREWNECK</a></h3>
+                            <div class="price">$21.00</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Shop Item-->
+                <div class="shop-item col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <a href="product-detail.html"><img src="{% static 'website/images/resource/products/4.jpg' %}" alt="" /></a>
+                            <div class="overlay-box">
+                                <ul class="option-box">
+                                    <li><a href="#"><span class="far fa-heart"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-shopping-bag"></span></a></li>
+                                    <li><a href="{% static 'website/images/resource/products/4.jpg' %}" class="lightbox-image" data-fancybox="products"><span class="fa fa-search"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="tag-banner">Trending</div>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="product-detail.html">WINTER WALKING</a></h3>
+                            <div class="price">$91.50</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Shop Item-->
+                <div class="shop-item col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <a href="product-detail.html"><img src="{% static 'website/images/resource/products/1.jpg' %}" alt="" /></a>
+                            <div class="overlay-box">
+                                <ul class="option-box">
+                                    <li><a href="#"><span class="far fa-heart"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-shopping-bag"></span></a></li>
+                                    <li><a href="{% static 'website/images/resource/products/1.jpg' %}" class="lightbox-image" data-fancybox="products"><span class="fa fa-search"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="product-detail.html">MULTI-WAY ULTRA</a></h3>
+                            <div class="price">$50.22</div>
+                        </div>
+                    </div>
+                </div>
+				
+			</div>
+			
+		</div>
+	</section>
+	
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'website/js/jquery.bootstrap-touchspin.js' %}"></script>
+{% endblock %}

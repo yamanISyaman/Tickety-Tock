@@ -1,0 +1,425 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-15 10:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/website/index.html:6
+msgid "Tickety Tock - Home"
+msgstr ""
+
+#: templates/website/index.html:42
+msgid "We make your dream <br> style a reality"
+msgstr ""
+
+#: templates/website/index.html:43 templates/website/index.html:57
+#: templates/website/index.html:71
+msgid ""
+"Since 1975, we've been weaving tales of time through the threads of your "
+"life, guided by the finest colors, tools, and expertise."
+msgstr ""
+
+#: templates/website/index.html:45 templates/website/index.html:59
+#: templates/website/index.html:73
+msgid "Know more"
+msgstr ""
+
+#: templates/website/index.html:56
+msgid "colors that fit <br> Your Personality"
+msgstr ""
+
+#: templates/website/index.html:70
+msgid "Customer Support <br>At Any Time You Need it"
+msgstr ""
+
+#: templates/website/index.html:91
+msgid "Our Featured Products"
+msgstr ""
+
+#: templates/website/index.html:92
+msgid "Here are some of our products that you would like"
+msgstr ""
+
+#: templates/website/index.html:169 templates/website/products.html:84
+msgid "Categories"
+msgstr ""
+
+#: templates/website/index.html:170
+msgid "Our products Categories "
+msgstr ""
+
+#: templates/website/index.html:413
+msgid "Need a choosing help? Read our blogs"
+msgstr ""
+
+#: templates/website/index.html:414
+msgid "Stay updated with latest trends, inspiration, expert tips and more"
+msgstr ""
+
+#: templates/website/index.html:479
+msgid "All that and more"
+msgstr ""
+
+#: templates/website/index.html:480
+msgid "Hand WAtches for all styles and budgets, Choose from thousands of"
+msgstr ""
+
+#: templates/website/index.html:480
+msgid "colors, brands and categories"
+msgstr ""
+
+#: templates/website/index.html:481
+msgid "contact us"
+msgstr ""
+
+#: templates/website/layout.html:101
+msgid "Home"
+msgstr ""
+
+#: templates/website/layout.html:103
+msgid "About us"
+msgstr ""
+
+#: templates/website/layout.html:105 website/models.py:113
+#: website/models.py:114 website/models.py:115 website/models.py:116
+#: website/models.py:117
+msgid "Products"
+msgstr ""
+
+#: templates/website/layout.html:107
+msgid "Blog"
+msgstr ""
+
+#: templates/website/layout.html:109
+msgid "Contact"
+msgstr ""
+
+#: templates/website/layout.html:167
+msgid ""
+"Tickety Tock was opened in 1975 as one small store and every year our name "
+"is spreading wider and wider"
+msgstr ""
+
+#: templates/website/layout.html:180
+msgid "Quick links"
+msgstr ""
+
+#: templates/website/layout.html:183
+msgid "Our History"
+msgstr ""
+
+#: templates/website/layout.html:184
+msgid "Careers"
+msgstr ""
+
+#: templates/website/layout.html:185
+msgid "Website Map"
+msgstr ""
+
+#: templates/website/layout.html:186
+msgid "FAQ"
+msgstr ""
+
+#: templates/website/layout.html:202
+msgid "Contact Info"
+msgstr ""
+
+#: templates/website/layout.html:206
+msgid "Damascus Suburbs"
+msgstr ""
+
+#: templates/website/layout.html:216
+msgid "Newsletter"
+msgstr ""
+
+#: templates/website/layout.html:217
+msgid "Stay in touch with our latest news and products"
+msgstr ""
+
+#: templates/website/layout.html:222
+msgid "Enter your email address"
+msgstr ""
+
+#: templates/website/layout.html:223
+msgid "Subscribe"
+msgstr ""
+
+#: templates/website/product-detail.html:6
+msgid "Tickety Tock - Products"
+msgstr ""
+
+#: templates/website/product-detail.html:60
+msgid "INOZINC"
+msgstr ""
+
+#: templates/website/product-detail.html:61
+msgid "INOZINC is a two-component water base inorganic zinc silicate primer."
+msgstr ""
+
+#: templates/website/product-detail.html:62 website/models.py:113
+msgid "Brand"
+msgstr ""
+
+#: templates/website/product-detail.html:63 templates/website/products.html:142
+msgid "Colors"
+msgstr ""
+
+#: templates/website/product-detail.html:63
+msgid "grey"
+msgstr ""
+
+#: templates/website/product-detail.html:78
+msgid "Recommended Uses"
+msgstr ""
+
+#: templates/website/product-detail.html:79
+msgid "features"
+msgstr ""
+
+#: templates/website/product-detail.html:80
+msgid "Application Instruction"
+msgstr ""
+
+#: templates/website/product-detail.html:81
+msgid "Technical Information"
+msgstr ""
+
+#: templates/website/product-detail.html:82
+msgid "Surface Preparation"
+msgstr ""
+
+#: templates/website/product-detail.html:83
+msgid "Drying Time"
+msgstr ""
+
+#: templates/website/product-detail.html:84
+msgid "Storing Conditions"
+msgstr ""
+
+#: templates/website/product-detail.html:85
+msgid "Notice"
+msgstr ""
+
+#: templates/website/product-detail.html:94
+msgid ""
+"INOZINC is recommended to be used directly to metal as a self-priming primer/"
+"coat to provide a long term protection of steel structures against "
+"corrosion. Typical uses are for structural steel, bridges, all marine and "
+"land-based oil and gas production facilities, and all steel structures "
+"exposed to severe weather conditions or exposed to moderate chemical "
+"spillage and fumes."
+msgstr ""
+
+#: templates/website/product-detail.html:101
+msgid ""
+" • Excellent long-term performance without topcoating even in marine?"
+"environment.<br>• Single coat application is sufficient for excellent "
+"protection even on surfaces contaminated by firmly adherent rusts.<br>• Fast "
+"cure, water resistance and hardness are developed in 2 hours.<br>• "
+"Resistance to mud cracking even at 125 microns thickness.<br>• Easy to "
+"repair, low cost maintenance.<br>• Water base, equipment can be cleaned up "
+"with water.<br>• Self-inspecting over organic contaminants, film cracks and "
+"disbonds immediately if applied over a contaminated surface.<br>• Cost "
+"advantage over multi-coat systems.<br>• Suitable to be topcoated, when "
+"required, by epoxy coatings."
+msgstr ""
+
+#: templates/website/product-detail.html:107
+#, python-format
+msgid ""
+"• Method of Application :\tConventional spray, nylon or polyester bruch for "
+"small area only. When applying INOZINC Primer it is important to keep the "
+"product stirred and to maintain a flow to prevent zinc settling in the spray "
+"lines. Also, it is vital to use spray equipment that has not been "
+"contaminated with organic solvents<br>• Mixing Ratio :\t3Kg (Comp A) to 7Kg "
+"(Comp B)<br>• Mixing :\tAdd Comp.B (powder) to Comp. A (liquid) and stir "
+"well before application in order to ensure that a uniform consistency is "
+"achieved. Never mix more material than can be used within potlife. Mixed "
+"materials not used within potlife must be discarded.<br>• Pot life :\t8 "
+"hours (higher temperatures will shorten polife sharply).<br>• Thinner / "
+"Cleaner :\tDo not thin. Clean applying tools by hot water.<br>• Application "
+"Temperature :\t5-40 ?C at a RH not more than 85%% .<br>• Curing :\tThe "
+"reaction between the two-component (A & B) can not be guaranteed unless a "
+"temperature of at least 5°C is maintained for the mixture and the substrate "
+"until complete curing. Temperature of substrate should be at least 3°C above "
+"dew point to avoid moisture condensation during application. Relative "
+"humidity during application and initial drying should not exceed 85%%.<br>• "
+"Note :\t• Coated surfaces by INOZINC should not be exposed to water, "
+"chemical fumes, or mechanical stresses before it is fully cured."
+msgstr ""
+
+#: templates/website/product-detail.html:112
+#, python-format
+msgid ""
+"• Component A :\tliquid<br>• Component B :\tpowder<br>• Gloss :\tflat<br>• "
+"Volume Solids :\t65 %%<br>• VOC :\t0.0 g/L<br>• Flexibility :\tVery "
+"Good<br>• Solvent Splash and Spill Resistance :\tExcellent<br>• Temperature "
+"Resistance :\t375 ?C<br>• Recommended film thickness :\t75-125 microns "
+"“dry”<br>• Theoretical spreading rate :\t8.7 m²/L at 75 microns “dry”<br>• "
+"Water resistance :\tExcellent<br>• Abrasian Resistance :\tExcellent<br>• "
+"Number of Coats :\t1<br>• Specific Gravity (mixed) :\t2.79 kg/L (DIN 51757)."
+"<br>• Packaging :\tComponent A (liquid) : 3 Kg in 1 metal can Component B "
+"(powder) : 7 Kg in 1 metal can<br>• Weather Resistance :\tExcellent"
+msgstr ""
+
+#: templates/website/product-detail.html:118
+msgid ""
+"Well-prepared-surfaces is an essential condition of coating successfulness. "
+"In general, surface must be clean, dry, undamaged and free of all "
+"contaminants prior to coating.<br>STEEL or GALVANIZING:<br>Remove all oil , "
+"grease, wax…etc from the surface to be coated by thinner S100 or S405."
+"<br>Apply INOZINC as soon as possible after surface preparation to prevent "
+"any contamination."
+msgstr ""
+
+#: templates/website/product-detail.html:124
+#, python-format
+msgid ""
+"• Dry to Touch :\t15 minutes (ASTM-D1640).<br>• Dry to Handle :\t30 minutes "
+"(ASTM-D1640).<br>• Fully Cured :\t2 hours<br>• Note :\tDrying times can be "
+"affected by many factors such as temperature, ventilation and coat "
+"thickness. Relative humidity should not exceed 85%%. Higher temperatures "
+"will shorten the drying times."
+msgstr ""
+
+#: templates/website/product-detail.html:130
+msgid ""
+"• Keep components A & B in a cool and well ventilated place, protected from "
+"freeze, heat and direct sunlight.<br>• Shelf life is two years from packing "
+"date in unopened original containers at 5 to 40°C. Containers should be kept "
+"tightly closed.<br>Safety:<br>• Well ventilated conditions should be "
+"provided during application.<br>• Do not breathe or inhale mist.<br>• Wear "
+"air-mask and avoid skin or eye contact.<br>• This Product is for "
+"professional use only. Not for residential use."
+msgstr ""
+
+#: templates/website/product-detail.html:136
+msgid ""
+"information in this data sheet and in all our data sheets are given to the "
+"best of our knowledge based on laboratory testing and practical experience. "
+"Final results depend on following instructions and on consumer skill. Our "
+"responsibility is limited to providing products that Conform to samples and "
+"specimens provided by us. Due to technical needs, we reserve the right to "
+"change any given specification without notice."
+msgstr ""
+
+#: templates/website/product-detail.html:158
+msgid "Related Products"
+msgstr ""
+
+#: templates/website/products.html:6
+msgid "Tcikety Tock - Products"
+msgstr ""
+
+#: templates/website/products.html:52
+msgid "Modern products"
+msgstr ""
+
+#: templates/website/products.html:53
+msgid ""
+"Modern products with an aesthetic touch to engrave the most beautiful "
+"memories in our minds."
+msgstr ""
+
+#: templates/website/products.html:54
+msgid "purchase now"
+msgstr ""
+
+#: templates/website/products.html:76
+msgid "Enter Search Keywords"
+msgstr ""
+
+#: templates/website/products.html:88
+msgid "Brands"
+msgstr ""
+
+#: templates/website/products.html:103
+msgid "Materials"
+msgstr ""
+
+#: templates/website/products.html:116
+msgid "Surfaces Finishes"
+msgstr ""
+
+#: templates/website/products.html:129
+msgid "Collections"
+msgstr ""
+
+#: templates/website/products.html:157
+msgid "Show All Products"
+msgstr ""
+
+#: templates/website/products.html:171
+msgid "Our Products"
+msgstr ""
+
+#: templates/website/products.html:174
+msgid "Oops! Seems Empty, reset the filters or try something else"
+msgstr ""
+
+#: ticketytock/settings.py:114
+msgid "English"
+msgstr ""
+
+#: ticketytock/settings.py:115
+msgid "Arabic"
+msgstr ""
+
+#: ticketytock/urls.py:9
+msgid "admin/"
+msgstr ""
+
+#: website/models.py:11 website/models.py:29 website/models.py:47
+#: website/models.py:65 website/models.py:83 website/models.py:110
+msgid "Name"
+msgstr ""
+
+#: website/models.py:86
+msgid "Logo"
+msgstr ""
+
+#: website/models.py:105
+msgid "Description"
+msgstr ""
+
+#: website/models.py:106
+msgid "Specifications"
+msgstr ""
+
+#: website/models.py:107
+msgid "Tag"
+msgstr ""
+
+#: website/models.py:112
+msgid "Image"
+msgstr ""
+
+#: website/models.py:114
+msgid "Case_Material"
+msgstr ""
+
+#: website/models.py:115
+msgid "Surface_finishes"
+msgstr ""
+
+#: website/models.py:116
+msgid "Collection"
+msgstr ""
+
+#: website/models.py:117
+msgid "Color"
+msgstr ""

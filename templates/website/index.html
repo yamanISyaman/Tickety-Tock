@@ -1,0 +1,489 @@
+{% extends 'website/layout.html' %}
+{% load static %}
+{% load i18n %}
+{% get_current_language as current_language %}
+
+{% block title %}{% trans "Tickety Tock - Home" %}{% endblock %}
+
+{% if current_language == "ar" %}
+{% block style %}
+
+    @media (min-width:767px) {
+        .main-slider .content {
+            direction: rtl;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .main-slider .slide, .main-slider.style-three .slide, .main-slider.style-two .slide, .main-slider.style-four .slide {
+            text-align: right;
+        }
+    }
+
+    .call-to-action-section {
+        direction: rtl;
+    }
+{% endblock %}
+{% endif %}
+
+{% block body %}
+    <!-- Main Slider -->
+	<section class="main-slider">
+		<div class="slider-box">
+		
+			<!-- Banner Carousel -->
+			<div class="banner-carousel owl-theme owl-carousel">
+			
+				<!-- Slide -->
+				<div class="slide">
+                	<div class="image-layer" style="background-image:url({% static 'website/images/main-slider/1.jpg' %})"></div>
+					<div class="auto-container">
+						<div class="content">
+							<h2>{% blocktrans %}We make your dream <br> style a reality{% endblocktrans %}</h2>
+							<div class="text">{% trans "Since 1975, we've been weaving tales of time through the threads of your life, guided by the finest colors, tools, and expertise." %}</div>
+							<div class="btns-box">
+								<a href="#" class="theme-btn btn-style-one"><span class="txt">{% trans "Know more" %}</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Slide -->
+				<div class="slide">
+                	<div class="image-layer" style="background-image:url({% static 'website/images/main-slider/2.jpg' %})"></div>
+					<div class="auto-container">
+						<div class="content">
+							<h2>{% blocktrans %}colors that fit <br> Your Personality{% endblocktrans %}</h2>
+                            <div class="text">{% trans "Since 1975, we've been weaving tales of time through the threads of your life, guided by the finest colors, tools, and expertise." %}</div>
+							<div class="btns-box">
+								<a href="#" class="theme-btn btn-style-one"><span class="txt">{% trans "Know more" %}</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Slide -->
+				<div class="slide">
+                	<div class="image-layer" style="background-image:url({% static 'website/images/main-slider/3.jpg' %})"></div>
+					<div class="auto-container">
+						<div class="content">
+							<h2>{% blocktrans %}Customer Support <br>At Any Time You Need it{% endblocktrans %}</h2>
+                            <div class="text">{% trans "Since 1975, we've been weaving tales of time through the threads of your life, guided by the finest colors, tools, and expertise." %}</div>
+							<div class="btns-box">
+								<a href="#" class="theme-btn btn-style-one"><span class="txt">{% trans "Know more" %}</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+	<!-- End Banner Section -->
+
+    <!-- Products Section Three -->
+    <section class="services-section-three">
+        <div class="auto-container">
+
+            <!-- Sec Title -->
+            <div class="sec-title light centered">
+                <h2>{% trans "Our Featured Products" %}</h2>
+                <div class="text">{% trans "Here are some of our products that you would like" %}</div>
+            </div>
+
+            <div class="row clearfix">
+
+                <!-- Service Block -->
+                <div class="service-block-three col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-box wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                        <div class="image">
+                            <a href="residental-interior.html"><img src="{% static 'website/images/resource/service-4.jpg' %}" alt=""></a>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="residental-interior.html">25 + Interior Designers</a></h3>
+                            <div class="text">Override the digital divide with additional clickthroughs from DevOps. Nanotechnology imme rsion along the information highway will close the loop.</div>
+                            <a href="residental-interior.html" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Block -->
+                <div class="service-block-three col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-box wow fadeInUp animated" data-wow-delay="250ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 250ms; animation-name: fadeInUp;">
+                        <div class="image">
+                            <a href="office-interior.html"><img src="{% static 'website/images/resource/service-5.jpg' %}" alt=""></a>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="office-interior.html">Furtiniture, Decor &amp; More</a></h3>
+                            <div class="text">Override the digital divide with additional clickthroughs from DevOps. Nanotechnology imme rsion along the information ...</div>
+                            <a href="office-interior.html" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Block -->
+                <div class="service-block-three col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-box wow fadeInUp animated" data-wow-delay="500ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 500ms; animation-name: fadeInUp;">
+                        <div class="image">
+                            <a href="commercial-interior.html"><img src="{% static 'website/images/resource/service-6.jpg' %}" alt=""></a>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="commercial-interior.html">Modular Solutions</a></h3>
+                            <div class="text">Override the digital divide with additional clickthroughs from DevOps. Nanotechnology imme rsion along the information highway will close the loop.</div>
+                            <a href="commercial-interior.html" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Block -->
+                <div class="service-block-three col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-box wow fadeInUp animated" data-wow-delay="750ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 750ms; animation-name: fadeInUp;">
+                        <div class="image">
+                            <a href="commercial-interior.html"><img src="{% static 'website/images/resource/service-6.jpg' %}" alt=""></a>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="commercial-interior.html">On Site Expertise</a></h3>
+                            <div class="text">Override the digital divide with additional clickthroughs from DevOps. Nanotechnology imme rsion along the information highway will close the loop.</div>
+                            <a href="commercial-interior.html" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Button Box -->
+            <div class="btn-box text-center">
+                <a href="residental-interior.html" class="theme-btn btn-style-three"><span class="txt">View all Services</span></a>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Products Section Three -->
+	
+	<!-- Services Section Two -->
+	<section class="services-section-two">
+		<div class="auto-container">
+			<!-- Sec Title -->
+			<div class="sec-title">
+				<h2>{% trans "Categories" %}</h2>
+				<div class="text">{% trans "Our products Categories " %}</div>
+			</div>
+			
+			<div class="row clearfix">
+				
+				<!-- Service Block -->
+				<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="content">
+							<div class="icon-box">
+								<span class="icon flaticon-desk-1"></span>
+							</div>
+							<h3><a href="office-interior.html">Office Interior</a></h3>
+							<div class="text">Lorem Ipsum is  simply my text of the printing and Ipsum is the Ipsum is simply.</div>
+							<a href="office-interior.html" class="read-more">Read More</a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Service Block -->
+				<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+						<div class="content">
+							<div class="icon-box">
+								<span class="icon flaticon-house-1"></span>
+							</div>
+							<h3><a href="office-interior.html">House Interior</a></h3>
+							<div class="text">Lorem Ipsum is  simply my text of the printing and Ipsum is the Ipsum is simply.</div>
+							<a href="office-interior.html" class="read-more">Read More</a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Service Block -->
+				<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+						<div class="content">
+							<div class="icon-box">
+								<span class="icon flaticon-shop"></span>
+							</div>
+							<h3><a href="office-interior.html">Restaurant Interior</a></h3>
+							<div class="text">Lorem Ipsum is  simply my text of the printing and Ipsum is the Ipsum is simply.</div>
+							<a href="office-interior.html" class="read-more">Read More</a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Service Block -->
+				<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="content">
+							<div class="icon-box">
+								<span class="icon flaticon-hospital"></span>
+							</div>
+							<h3><a href="office-interior.html">Hospital Interior</a></h3>
+							<div class="text">Lorem Ipsum is  simply my text of the printing and Ipsum is the Ipsum is simply.</div>
+							<a href="office-interior.html" class="read-more">Read More</a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Service Block -->
+				<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+						<div class="content">
+							<div class="icon-box">
+								<span class="icon flaticon-apartment-1"></span>
+							</div>
+							<h3><a href="office-interior.html">Appartment Interior</a></h3>
+							<div class="text">Lorem Ipsum is  simply my text of the printing and Ipsum is the Ipsum is simply.</div>
+							<a href="office-interior.html" class="read-more">Read More</a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Service Block -->
+				<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms">
+						<div class="content">
+							<div class="icon-box">
+								<span class="icon flaticon-hotel"></span>
+							</div>
+							<h3><a href="office-interior.html">Hospitality Interior</a></h3>
+							<div class="text">Lorem Ipsum is  simply my text of the printing and Ipsum is the Ipsum is simply.</div>
+							<a href="office-interior.html" class="read-more">Read More</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+	<!-- End Services Section Two -->
+
+    <!-- Counter Section -->
+    <section class="counter-section">
+        <div class="auto-container">
+
+            <!-- Fact Counter -->
+            <div class="fact-counter">
+                <div class="row clearfix">
+
+                    <!--Column-->
+                    <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+                        <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: hidden; animation-duration: 1500ms; animation-delay: 0ms; animation-name: none;">
+                            <div class="content">
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="2500" data-stop="8">0</span> Year
+                                </div>
+                                <h4 class="counter-title">Material Warranty</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Column-->
+                    <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+                        <div class="inner wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms" style="visibility: hidden; animation-duration: 1500ms; animation-delay: 300ms; animation-name: none;">
+                            <div class="content">
+                                <div class="count-outer count-box alternate">
+                                    <span class="count-text" data-speed="3000" data-stop="2500">0</span>+
+                                </div>
+                                <h4 class="counter-title">Homes Completed</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Column-->
+                    <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+                        <div class="inner wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: hidden; animation-duration: 1500ms; animation-delay: 600ms; animation-name: none;">
+                            <div class="content">
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="3000" data-stop="200">0</span>+
+                                </div>
+                                <h4 class="counter-title">Interior Designer</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Column-->
+                    <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+                        <div class="inner wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1500ms" style="visibility: hidden; animation-duration: 1500ms; animation-delay: 900ms; animation-name: none;">
+                            <div class="content">
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="2500" data-stop="45">0</span> Days
+                                </div>
+                                <h4 class="counter-title">Project Delivery</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Counter Section -->
+	
+	<!-- Featured Section -->
+	<section class="featured-section" style="background-image: url({% static 'website/images/background/2.jpg' %})">
+		<div class="auto-container">
+			<!-- Title Box -->
+			<div class="title-box">
+				<h2>Our Work Process</h2>
+			</div>
+			
+			<div class="row clearfix">
+				
+				<!-- Feature Block -->
+				<div class="feature-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="icon-outer">
+							<div class="icon-box">
+								<span class="icon flaticon-hand-shake"></span>
+							</div>
+							<div class="feature-number">1</div>
+						</div>
+						<div class="lower-content">
+							<h3><a href="residental-interior.html">Meet Customers</a></h3>
+							<div class="text">Osed quia consequuntur magni dolores eos qui rati one volu ptatem sequi nesciunt.</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Feature Block -->
+				<div class="feature-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
+						<div class="icon-outer">
+							<div class="icon-box">
+								<span class="icon flaticon-answer"></span>
+							</div>
+							<div class="feature-number">2</div>
+						</div>
+						<div class="lower-content">
+							<h3><a href="residental-interior.html">Design Discussion</a></h3>
+							<div class="text">Osed quia consequuntur magni dolores eos qui rati one volu ptatem sequi nesciunt.</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Feature Block -->
+				<div class="feature-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="1500ms">
+						<div class="icon-outer">
+							<div class="icon-box">
+								<span class="icon flaticon-sketch"></span>
+							</div>
+							<div class="feature-number">3</div>
+						</div>
+						<div class="lower-content">
+							<h3><a href="residental-interior.html">Drafting Design</a></h3>
+							<div class="text">Osed quia consequuntur magni dolores eos qui rati one volu ptatem sequi nesciunt.</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Feature Block -->
+				<div class="feature-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="750ms" data-wow-duration="1500ms">
+						<div class="icon-outer">
+							<div class="icon-box">
+								<span class="icon flaticon-house-1"></span>
+							</div>
+							<div class="feature-number">4</div>
+						</div>
+						<div class="lower-content">
+							<h3><a href="residental-interior.html">Implimentation</a></h3>
+							<div class="text">Osed quia consequuntur magni dolores eos qui rati one volu ptatem sequi nesciunt.</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+	<!-- End Featured Section -->
+	
+	<!-- News Section -->
+	<section class="news-section">
+		<div class="auto-container">
+			<!-- Sec Title -->
+			<div class="sec-title">
+				<h2>{% trans "Need a choosing help? Read our blogs" %}</h2>
+				<div class="text">{% trans "Stay updated with latest trends, inspiration, expert tips and more" %}</div>
+			</div>
+			
+			<div class="row clearfix">
+				
+				<!-- News Block -->
+				<div class="news-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<a href="blog-detail.html"><img src="{% static 'website/images/resource/news-1.jpg' %}" alt="" /></a>
+						</div>
+						<div class="lower-content">
+							<ul class="post-meta">
+								<li>By <span>Michale</span></li>
+								<li>Modular Kitchen</li>
+							</ul>
+							<h3><a href="blog-detail.html">15 Vastu ideas for the main door emphasizes on every par ...</a></h3>
+							<a href="blog-detail.html" class="read-more">Read more <span class="icon flaticon-right-arrow-1"></span></a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- News Block -->
+				<div class="news-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInRight" data-wow-delay="250ms" data-wow-duration="1500ms">
+						<div class="image">
+							<a href="blog-detail.html"><img src="{% static 'website/images/resource/news-2.jpg' %}" alt="" /></a>
+						</div>
+						<div class="lower-content">
+							<ul class="post-meta">
+								<li>By <span>Michale</span></li>
+								<li>Interior, awesome</li>
+							</ul>
+							<h3><a href="blog-detail.html">Storage ideas for the bedroom by interior designers ...</a></h3>
+							<a href="blog-detail.html" class="read-more">Read more <span class="icon flaticon-right-arrow-1"></span></a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- News Block -->
+				<div class="news-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInRight" data-wow-delay="500ms" data-wow-duration="1500ms">
+						<div class="image">
+							<a href="blog-detail.html"><img src="{% static 'website/images/resource/news-3.jpg' %}" alt="" /></a>
+						</div>
+						<div class="lower-content">
+							<ul class="post-meta">
+								<li>By <span>Michale</span></li>
+								<li>Interior, awesome</li>
+							</ul>
+							<h3><a href="blog-detail.html">Kids bedroom design ideas by interior designers in NY</a></h3>
+							<a href="blog-detail.html" class="read-more">Read more <span class="icon flaticon-right-arrow-1"></span></a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+	<!-- End News Section -->
+	
+	<!-- Call To Action Section -->
+	<section class="call-to-action-section" style="background-image: url({% static 'website/images/background/1.jpg' %})">
+		<div class="auto-container">
+			<h2>{% trans "All that and more" %}</h2>
+			<div class="text">{% trans "Hand WAtches for all styles and budgets, Choose from thousands of" %} <br>{% trans "colors, brands and categories" %}</div>
+			<a href="contact.html" class="theme-btn btn-style-two"><span class="txt">{% trans "contact us" %}</span></a>
+		</div>
+	</section>
+	<!-- End Call To Action Section -->
+
+
+{% endblock %}
+	
+	
