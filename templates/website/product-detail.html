@@ -3,7 +3,7 @@
 {% load i18n %}
 {% get_current_language as current_language %}
 
-{% block title %}{% trans "Tickety Tock - Products" %}{% endblock %}
+{% block title %}{% trans "Tickety Tock - Product" %}{% endblock %}
 
 
 {% block style %}
@@ -53,14 +53,14 @@
                     <div class="basic-details">
                         <div class="row clearfix">
                             <div class="image-column col-lg-4 col-md-4 col-sm-4">
-                                <figure class="image-box"><a href="{% static 'website/images/resource/products/9.jpg' %}" class="lightbox-image" title="Image Caption Here"><img src="{% static 'website/images/resource/products/9.jpg' %}" alt=""></a></figure>
+                                <figure class="image-box" class="lightbox-image" title="Image Caption Here"><img src="{{ product.image.url }}" alt="{{ product.name }}"></figure>
                             </div>
                             <div class="info-column col-lg-8 col-md-8 col-sm-8">
                             	<div class="inner-column">
-                                    <h4>{% trans 'Watch name' %}</h4>
-                                    <div class="text">{% trans 'summary summary summary' %}</div>
-                                    <div class="short">{% trans 'Brand' %} : <span><img src="/media/brands/test.png" alt="nameofwatch" style="max-height: 2rem; background-color: #ffffff;"></span></div>
-                                    <div class="short">{% trans 'Colors' %} : <span>{% trans 'grey' %}</span></div>
+                                    <h4>{{ product.name }}</h4>
+                                    <div class="text">{{ product.summary }}</div>
+                                    <div class="short">{% trans 'Brand' %} : <span><img src="{{ product.brand.logo.url }}" alt="{{ product.brand.name }}" style="max-height: 2rem; background-color: #ffffff;"></span></div>
+                                    <div class="short">{% trans 'Colors' %} : <span>{% for c in product.color.objects.all %} c.name, {% endfor %}</span></div>
                                     
                                 </div>
                             </div>
@@ -75,24 +75,24 @@
                         
                             <!--Tab Btns-->
                             <ul class="tab-btns tab-buttons clearfix">
-                                <li data-tab="#prod-rcmd" class="tab-btn active-btn">{% trans 'Description' %}</li>
-                                <li data-tab="#prod-ftr" class="tab-btn">{% trans 'Specification' %}</li>
+                                <li data-tab="#prod-desc" class="tab-btn active-btn">{% trans 'Description' %}</li>
+                                <li data-tab="#prod-spf" class="tab-btn">{% trans 'Specification' %}</li>
                             </ul>
                             
                             <!--Tabs Container-->
                             <div class="tabs-content">
                                 
                                 <!--Tab / Active Tab-->
-                                <div class="tab active-tab" id="prod-rcmd">
+                                <div class="tab active-tab" id="prod-desc">
                                     <div class="content">
-                                        <p>{% trans ' something something something something something something something something something something something' %}</p>
+                                        <p>{{ product.desc }}</p>
                                     </div>
                                 </div>
                                 
                                 <!--Tab-->
-                                <div class="tab" id="prod-ftr">
+                                <div class="tab" id="prod-spf">
                                     <div class="content">
-                                        <p>{% blocktrans %}  something something something something something something something something something something something something{% endblocktrans %}</p>
+                                        <p>{{ product.spf }}</p>
                                     </div>
                                 </div>
                             </div>

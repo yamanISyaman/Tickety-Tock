@@ -59,7 +59,7 @@ class Color(TranslatableModel):
 
 
 # Surface finishes Model
-class Surface_Finishes(TranslatableModel):
+class Surface_Finish(TranslatableModel):
 
     translations = TranslatedFields(
         name = models.CharField(_('Name'), max_length=150)
@@ -100,6 +100,7 @@ class Brand(TranslatableModel):
 # product object model
 class Product(TranslatableModel):
     
+    
     # fields that need translation
     translations = TranslatedFields(
         desc = models.CharField(_('Description'), max_length=1000),
@@ -108,14 +109,15 @@ class Product(TranslatableModel):
         tag = models.CharField(_('Tag'), max_length=20, blank=True)
     )
     
+    
     name = models.CharField(_('Name'), max_length=150)
     slug = models.SlugField()
     image = models.ImageField(_('Image'), upload_to='products')
-    brand = models.ManyToManyField(Brand, verbose_name=_('Brand'), related_name=_('Products'), blank=True)
+    brand = models.ForeignKey(Brand, verbose_name=_('Brand'), related_name=_('Products'), blank=True, on_delete=models.CASCADE)
     material = models.ManyToManyField(Case_Material, verbose_name=_('Case_Material'), related_name=_('Products'), blank=True)
-    surface_finishes = models.ManyToManyField(Surface_Finishes, verbose_name=_('Surface_finishes'), related_name=_('Products'), blank=True)
-    collection = models.ManyToManyField(Collection, verbose_name=_('Collection'), related_name=_('Products'), blank=True)
-    Color = models.ManyToManyField(Color, verbose_name=_('Color'), related_name=_('Products'), blank=True)
+    surface_finish = models.ManyToManyField(Surface_Finish, verbose_name=_('Surface_Finishes'), related_name=_('Products'), blank=True)
+    collection = models.ForeignKey(Collection, verbose_name=_('Collection'), related_name=_('Products'), blank=True, on_delete=models.PROTECT)
+    color = models.ManyToManyField(Color, verbose_name=_('Color'), related_name=_('Products'), blank=True)
 
     def __str__(self):
         return self.name
@@ -124,6 +126,7 @@ class Product(TranslatableModel):
         # Return a JSON string of the model instance
         return {
             "id": self.id,
+            "slug": self.slug,
             "name": self.name,
             "tag": self.tag,
             "image": self.image.url,

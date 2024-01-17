@@ -100,7 +100,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                <a data-toggle="collapse" href="#materials" role="button" aria-expanded="false" aria-controls="materials" class="parent-cat btn btn-light">{% trans "Materials" %}</a>
+                                <a data-toggle="collapse" href="#materials" role="button" aria-expanded="false" aria-controls="materials" class="parent-cat btn btn-light">{% trans "Case Materials" %}</a>
                                                                     <div class="collapse" id="materials">
                                                                       <div class="card card-body">
                                                                           <div class="popular-tags">
@@ -113,12 +113,12 @@
                                                                     </div>
                                 </li>
                                 <li>
-                                <a data-toggle="collapse" href="#surfaces_finishes" role="button" aria-expanded="false" aria-controls="surfaces_finishes" class="parent-cat btn btn-light">{% trans "Surfaces Finishes" %}</a>
-                                                                    <div class="collapse" id="surfaces_finishes">
+                                <a data-toggle="collapse" href="#surface_finishes" role="button" aria-expanded="false" aria-controls="surface_finishes" class="parent-cat btn btn-light">{% trans "Surfaces Finishes" %}</a>
+                                                                    <div class="collapse" id="surface_finishes">
                                                                       <div class="card card-body">
                                                                           <div class="popular-tags">
                                                                             <a id="surface_finish" class="all-filter pressed">All</a>
-                                                                            {% for s_f in surfaces_finishes %}
+                                                                            {% for s_f in surface_finishes %}
                                                                                 <a id="surface_finish" class="btn-filter" data-value={{ s_f.id }}>{{ s_f.name }}</a>
                                                                             {% endfor %}
                                                                           </div>

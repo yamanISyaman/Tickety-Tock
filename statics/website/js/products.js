@@ -93,7 +93,7 @@ function createShopItem(data) {
 
   // Create the anchor element with the data.url as the href attribute and append it to the image element
   let anchor = document.createElement("a");
-  anchor.href = `/${lang}/products/${data.name}_${data.id}`;
+  anchor.href = `/${lang}/products/${data.slug}_${data.id}`;
   anchor.alt = data.name;
   image.appendChild(anchor);
 

@@ -3,7 +3,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.core.paginator import Paginator
-from .models import Product, Case_Material, Color, Surface_Finishes, Collection, Brand
+from .models import Product, Case_Material, Color, Surface_Finish, Collection, Brand
 # Create your views here.
 
 # homepage view
@@ -20,6 +20,7 @@ def products_view(request):
 
         data = json.loads(request.body)
         filter = data["filter"]
+        
         page = data["page"]
         search_word = filter.pop('search')
 
@@ -50,7 +51,7 @@ def products_view(request):
         "brands": Brand.objects.language(lang).all(),
         "materials": Case_Material.objects.language(lang).all(),
         "colors": Color.objects.all(),
-        "surface_finishes": Surface_Finishes.objects.language(lang).all(),
+        "surface_finishes": Surface_Finish.objects.language(lang).all(),
         "collections": Collection.objects.language(lang).all(),
     })
 
@@ -58,4 +59,5 @@ def products_view(request):
 
 # product details view
 def product_details(request, name, id):
-    return render(request, 'website/product-detail.html')
+    product = Product.objects.language(request.LANGUAGE_CODE).get(id=id)
+    return render(request, 'website/product-detail.html', {"product": product})
