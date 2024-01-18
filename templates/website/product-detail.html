@@ -60,8 +60,7 @@
                                     <h4>{{ product.name }}</h4>
                                     <div class="text">{{ product.summary }}</div>
                                     <div class="short">{% trans 'Brand' %} : <span><img src="{{ product.brand.logo.url }}" alt="{{ product.brand.name }}" style="max-height: 2rem; background-color: #ffffff;"></span></div>
-                                    <div class="short">{% trans 'Colors' %} : <span>{% for c in product.color.objects.all %} c.name, {% endfor %}</span></div>
-                                    
+                                    <div class="short">{% trans 'Colors' %} : <span>{% for c in product.color.all %}<i> ({{ c.name }}) </i>{% endfor %}</span></div>                                    
                                 </div>
                             </div>
                         </div>
@@ -109,6 +108,7 @@
     <!--End Shop Single Section-->
 	
 	<!-- Related Products -->
+    {% if sproducts %}
 	<section class="related-products">
         <div class="auto-container">
             <!--Sec Title-->
@@ -117,92 +117,25 @@
             </div>
             
             <div class="row clearfix">
-				
+				{% for p in sproducts %}
 				<!--Shop Item-->
                 <div class="shop-item col-lg-3 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image">
-                            <a href="product-detail.html"><img src="{% static 'website/images/resource/products/2.jpg' %}" alt="" /></a>
-                            <div class="overlay-box">
-                                <ul class="option-box">
-                                    <li><a href="#"><span class="far fa-heart"></span></a></li>
-                                    <li><a href="#"><span class="fa fa-shopping-bag"></span></a></li>
-                                    <li><a href="{% static 'website/images/resource/products/2.jpg' %}" class="lightbox-image" data-fancybox="products"><span class="fa fa-search"></span></a></li>
-                                </ul>
-                            </div>
+                            <a href="{% url 'product-details' p.slug p.id %}"><img src="{{ p.image.url }}" alt="{{ p.name }}" /></a>
                         </div>
                         <div class="lower-content">
-                            <h3><a href="product-detail.html">SIDE-TIE TANK</a></h3>
-                            <div class="price">$39.32</div>
+                            <h3><a href="{% url 'product-details' p.slug p.id %}">{{ p.name }}</a></h3>
                         </div>
                     </div>
                 </div>
-                
-                <!--Shop Item-->
-                <div class="shop-item col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image">
-                            <a href="product-detail.html"><img src="{% static 'website/images/resource/products/3.jpg' %}" alt="" /></a>
-                            <div class="overlay-box">
-                                <ul class="option-box">
-                                    <li><a href="#"><span class="far fa-heart"></span></a></li>
-                                    <li><a href="#"><span class="fa fa-shopping-bag"></span></a></li>
-                                    <li><a href="{% static 'website/images/resource/products/3.jpg' %}" class="lightbox-image" data-fancybox="products"><span class="fa fa-search"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h3><a href="product-detail.html">COLD CREWNECK</a></h3>
-                            <div class="price">$21.00</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!--Shop Item-->
-                <div class="shop-item col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image">
-                            <a href="product-detail.html"><img src="{% static 'website/images/resource/products/4.jpg' %}" alt="" /></a>
-                            <div class="overlay-box">
-                                <ul class="option-box">
-                                    <li><a href="#"><span class="far fa-heart"></span></a></li>
-                                    <li><a href="#"><span class="fa fa-shopping-bag"></span></a></li>
-                                    <li><a href="{% static 'website/images/resource/products/4.jpg' %}" class="lightbox-image" data-fancybox="products"><span class="fa fa-search"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="tag-banner">Trending</div>
-                        </div>
-                        <div class="lower-content">
-                            <h3><a href="product-detail.html">WINTER WALKING</a></h3>
-                            <div class="price">$91.50</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!--Shop Item-->
-                <div class="shop-item col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image">
-                            <a href="product-detail.html"><img src="{% static 'website/images/resource/products/1.jpg' %}" alt="" /></a>
-                            <div class="overlay-box">
-                                <ul class="option-box">
-                                    <li><a href="#"><span class="far fa-heart"></span></a></li>
-                                    <li><a href="#"><span class="fa fa-shopping-bag"></span></a></li>
-                                    <li><a href="{% static 'website/images/resource/products/1.jpg' %}" class="lightbox-image" data-fancybox="products"><span class="fa fa-search"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h3><a href="product-detail.html">MULTI-WAY ULTRA</a></h3>
-                            <div class="price">$50.22</div>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
 				
 			</div>
 			
 		</div>
 	</section>
+    {% endif %}
 	
 {% endblock %}
 

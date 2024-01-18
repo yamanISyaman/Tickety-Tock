@@ -60,4 +60,5 @@ def products_view(request):
 # product details view
 def product_details(request, name, id):
     product = Product.objects.language(request.LANGUAGE_CODE).get(id=id)
-    return render(request, 'website/product-detail.html', {"product": product})
+    sproducts = Product.objects.language(request.LANGUAGE_CODE).order_by('id').filter(brand=product.brand).exclude(id=id)[0:4]
+    return render(request, 'website/product-detail.html', {"product": product, "sproducts": sproducts})

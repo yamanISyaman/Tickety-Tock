@@ -113,10 +113,10 @@ class Product(TranslatableModel):
     name = models.CharField(_('Name'), max_length=150)
     slug = models.SlugField()
     image = models.ImageField(_('Image'), upload_to='products')
-    brand = models.ForeignKey(Brand, verbose_name=_('Brand'), related_name=_('Products'), blank=True, on_delete=models.CASCADE)
+    brand = models.ForeignKey(Brand, verbose_name=_('Brand'), related_name=_('Products'), on_delete=models.CASCADE)
     material = models.ManyToManyField(Case_Material, verbose_name=_('Case_Material'), related_name=_('Products'), blank=True)
     surface_finish = models.ManyToManyField(Surface_Finish, verbose_name=_('Surface_Finishes'), related_name=_('Products'), blank=True)
-    collection = models.ForeignKey(Collection, verbose_name=_('Collection'), related_name=_('Products'), blank=True, on_delete=models.PROTECT)
+    collection = models.ForeignKey(Collection, verbose_name=_('Collection'), related_name=_('Products'), on_delete=models.PROTECT)
     color = models.ManyToManyField(Color, verbose_name=_('Color'), related_name=_('Products'), blank=True)
 
     def __str__(self):
