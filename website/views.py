@@ -3,7 +3,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.core.paginator import Paginator
-from .models import Product, Case_Material, Color, Surface_Finish, Collection, Brand
+from .models import Product, Case_Material, Color, Surface_Finish, Collection, Brand, Blog, Blog_Cates
 # Create your views here.
 
 # homepage view
@@ -65,6 +65,39 @@ def product_details(request, slug, id):
 
 
 # blogs page view
+@csrf_exempt
 def blogs_view(request):
     
-    return render(request, 'website/blog.html')
+    lang = request.LANGUAGE_CODE
+    if request.method == "POST":
+
+        data = json.loads(request.body)
+        filter = data["filter"]
+        
+        page = data["page"]
+        search_word = filter.pop('search')
+
+        filter_kargs = {k + '__id__in': v for k, v in filter.items()}
+
+        blogs = Blog.objects.language(lang).filter(translations__title__contains=search_word, **filter_kargs).distinct().order_by('id')
+
+
+        # make a paginator
+        pg = Paginator(blogs, 1)
+        
+        p = pg.page(page)
+
+        serialized_blogs = [blog.serialize() for blog in p.object_list]
+
+
+        return JsonResponse({
+            "has_next": p.has_next(),
+            "has_prev": p.has_previous(),
+            "num_pages": pg.num_pages,
+            "page": page,
+            "blogs": serialized_blogs,
+        }, status=201)
+    
+
+    return render(request, 'website/blog.html', {
+        "categories": Blog_Cates.objects.language(lang).all(),})

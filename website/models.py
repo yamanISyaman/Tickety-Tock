@@ -111,7 +111,7 @@ class Product(TranslatableModel):
     
     
     name = models.CharField(_('Name'), max_length=150)
-    slug = models.SlugField()
+    slug = models.SlugField(unique=True)
     image = models.ImageField(_('Image'), upload_to='products')
     brand = models.ForeignKey(Brand, verbose_name=_('Brand'), related_name=_('Products'), on_delete=models.CASCADE)
     material = models.ManyToManyField(Case_Material, verbose_name=_('Case_Material'), related_name=_('Products'), blank=True)
@@ -133,4 +133,52 @@ class Product(TranslatableModel):
             "summary": self.summary,
             "desc": self.desc,
             "spf": self.spf,
+        }
+
+    
+# blog categories
+class Blog_Cates(TranslatableModel):
+
+    translations = TranslatedFields(
+        name = models.CharField(_('Name'), max_length=150)
+    )
+
+
+    def __str__(self):
+        return self.name
+
+    def serialize(self):
+        return {
+            "id": self.id,
+            "name": self.name,
+        }
+    
+    
+# blogs object model
+class Blog(TranslatableModel):
+    
+    # fields that need translation
+    translations = TranslatedFields(
+        title = models.CharField(_('Title'), max_length=1000),
+        content = models.TextField(_('Content')),
+    )
+    
+    slug = models.SlugField(unique=True)
+    image = models.ImageField(_('Image'), upload_to='blogs')
+    category = models.ManyToManyField(Blog_Cates, verbose_name=_('Category'), related_name=_('Blog'), blank=True)
+    created_at = models.DateTimeField(auto_now_add=True, db_index=True)
+    
+    def __str__(self):
+        return self.title
+
+    def serialize(self):
+        # Return a JSON string of the model instance
+        return {
+            "id": self.id,
+            "slug": self.slug,
+            "title": self.title,
+            "image": self.image.url,
+            "summary": self.content[:500],
+            "content": self.content,
+            "category": [c.serialize() for c in self.category.all()]
         }
