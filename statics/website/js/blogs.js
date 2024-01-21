@@ -17,9 +17,6 @@ function getData(page=1) {
     })
     .then(response => response.json())
     .then(result => {
-        
-        console.log(createObject())
-        console.log(result)
 
         // clear the current products
         let container = document.getElementById("blogs-container");
@@ -57,7 +54,7 @@ function createObject() {
     if (obj.hasOwnProperty('category')) {
       obj['category'].push(value);
     } else {
-        obj['category'] = value;
+        obj['category'] = [value];
     }
   }
   // Return the object
@@ -184,7 +181,7 @@ function pressChildAll(element) {
     let pressedElements = document.querySelectorAll("#" + id + ".pressed");
     for (let pressedElement of pressedElements) {
         pressedElement.classList.remove("pressed");
-  }
+    }
     // add the class "pressed" to the given element
     element.classList.add("pressed");
     getData();
@@ -220,32 +217,6 @@ function assignEvents() {
     searchInput.addEventListener("input", function() {
         getData();
     });
-}
-
-
-// This function adds a click event listener to the button
-function addButtonListener(button) {
-  // Add a click event listener to the button element
-  button.addEventListener("click", function() {
-    // Get all the elements with the class "all-filter"
-    var filters = document.querySelectorAll(".all-filter");
-    // Loop through the filters
-    for (var i = 0; i < filters.length; i++) {
-      // Get the current filter element
-      var filter = filters[i];
-      // Call the function pressChildAll(element) with the filter element as the argument
-      pressChildAll(filter);
-    }
-
-    // clear the search input field
-    var input = document.getElementById("search");
-    // Set the input value to an empty string
-    input.value = "";
-      
-    // Remove the button element from the document
-    button.remove();
-    getData();
-  });
 }
 
 

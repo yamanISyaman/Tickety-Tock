@@ -6303,7 +6303,7 @@ img{
 
 ***/
 
-.shop-pagination{
+.shop-pagination .blog-pagination {
 	position:relative;
 	display: block;
 	width: 100%;
@@ -6311,19 +6311,19 @@ img{
 	text-align: center;
 }
 
-.shop-pagination ul{
+.shop-pagination ul, .blog-pagination ul{
 	position:relative;
 	width: 100%;
 }
 
-.shop-pagination li{
+.shop-pagination li, .blog-pagination li{
 	position:relative;
 	display: inline-block;
 	margin: 0 8px 8px;
 	vertical-align: top;
 }
 
-.shop-pagination li a{
+.shop-pagination li a, .blog-pagination li a{
 	position:relative;
 	display: block;
 	height:40px;
@@ -6344,20 +6344,25 @@ img{
 }
 
 .shop-pagination li.next a,
-.shop-pagination li.prev a{
+.shop-pagination li.prev a,
+.blog-pagination li.next a,
+.blog-pagination li.prev a{
 	background-color: #222222;
 	color: #ffffff;
 	font-size:18px;
 }
 
 .shop-pagination li a:hover,
-.shop-pagination li.active a{
+.shop-pagination li.active a,
+.blog-pagination li a:hover,
+.blog-pagination li.active a{
 	color:#ffffff;	
 	background:#0066cc;
 	border-color:#0066cc;
 }
 
-.shop-pagination.style-two li a{
+.shop-pagination.style-two li a,
+.blog-pagination.style-two li a{
 	border-radius: 50%;
 }
 
