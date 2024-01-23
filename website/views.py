@@ -101,3 +101,12 @@ def blogs_view(request):
 
     return render(request, 'website/blog.html', {
         "categories": Blog_Cates.objects.language(lang).all(),})
+
+
+# blog details view
+def blog_detail(request, slug, id):
+    
+    post = Blog.objects.language(request.LANGUAGE_CODE).get(id=id, slug=slug)
+    sposts = Blog.objects.language(request.LANGUAGE_CODE).all().order_by('created_at')[:5]
+    
+    return render(request, "website/blog-detail.html", {"post": post, "sposts": sposts})

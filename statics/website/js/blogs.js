@@ -93,12 +93,6 @@ function createBlogItem(data) {
     img.alt = data.title;
     figure.appendChild(img);
 
-    // Create span element for date
-    let dateSpan = document.createElement('span');
-    dateSpan.className = 'date';
-    dateSpan.textContent = data.created_at;
-    imageBox.appendChild(dateSpan);
-
     // Create lower-content div
     let lowerContent = document.createElement('div');
     lowerContent.className = 'lower-content';
@@ -125,7 +119,7 @@ function createBlogItem(data) {
 
     // Create a element inside link-box
     let aLink = document.createElement('a');
-    aLink.href = data.slug;
+    aLink.href = `/${lang}/blogs/${data.slug}_${data.id}`;
     aLink.className = 'theme-btn read-more';
     if (lang == 'en')
         {
