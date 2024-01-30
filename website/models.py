@@ -182,3 +182,10 @@ class Blog(TranslatableModel):
             "content": self.content,
             "category": [c.serialize() for c in self.category.all()]
         }
+    
+    
+class Subscriber(models.Model):
+    email = models.EmailField(unique=True)
+
+    def __str__(self):
+        return self.email

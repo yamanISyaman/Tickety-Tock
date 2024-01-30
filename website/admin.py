@@ -1,6 +1,6 @@
 from django.contrib import admin
 from parler.admin import TranslatableAdmin
-from website.models import Product, Case_Material, Collection, Surface_Finish, Brand, Color, Blog, Blog_Cates
+from website.models import Product, Case_Material, Collection, Surface_Finish, Brand, Color, Blog, Blog_Cates, Subscriber
 
 
 # customizing admin models
@@ -29,3 +29,4 @@ admin.site.register(Collection, CategoryAdmin)
 admin.site.register(Surface_Finish, CategoryAdmin)
 admin.site.register(Color, CategoryAdmin)
 admin.site.register(Brand, CategoryAdmin)
+admin.site.register(Subscriber)

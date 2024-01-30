@@ -73,7 +73,7 @@
 <div class="page-wrapper">
     <!-- Preloader -->
     <div class="preloader"></div>
-
+    
     <header class="main-header header-style-one">
 
         <!-- Header Upper -->
@@ -214,15 +214,16 @@
                                 <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                                     <div class="footer-widget newsletter-widget">
                                         <h2>{% trans "Newsletter" %}</h2>
-                                        <div class="text">{% trans "Stay in touch with our latest news and products" %}</div>
+                                        <div class="text">{% trans "Stay in touch with our latest news and offers" %}</div>
                                         <!-- Newsletter Form -->
                                         <div class="newsletter-form">
-                                            <form method="post" action="#">
-                                                <div class="form-group">
-                                                    <input type="email" name="email" value="" placeholder="{% trans 'Enter your email address' %}" required>
-                                                    <button type="submit" class="theme-btn btn-style-one"><span class="txt">{% trans "Subscribe" %}</span></button>
+                                            <div class="form-group">
+                                                <div class="sub-message">
+                                                    
                                                 </div>
-                                            </form>
+                                                <input type="email" class="sub-input" name="email" value="" placeholder="{% trans 'Enter your email address' %}" required>
+                                                <button class="theme-btn btn-style-one sub-btn"><span class="txt">{% trans "Subscribe" %}</span></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -253,6 +254,7 @@
     <script src="{% static 'website/js/wow.js' %}"></script>
     <script src="{% static 'website/js/appear.js' %}"></script>
     <script src="{% static 'website/js/scrollbar.js' %}"></script>
+    <script src="{% static 'website/js/main.js' %}"></script>
     {% block script %}
     {% endblock %}
     <script src="{% static 'website/js/script.js' %}"></script>

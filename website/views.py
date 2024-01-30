@@ -1,9 +1,12 @@
 import json
-from django.shortcuts import render
+from django.db import IntegrityError
+from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.core.paginator import Paginator
-from .models import Product, Case_Material, Color, Surface_Finish, Collection, Brand, Blog, Blog_Cates
+from django.core.mail import send_mail
+from django.conf import settings
+from .models import Product, Case_Material, Color, Surface_Finish, Collection, Brand, Blog, Blog_Cates, Subscriber
 # Create your views here.
 
 # homepage view
@@ -110,3 +113,51 @@ def blog_detail(request, slug, id):
     sposts = Blog.objects.language(request.LANGUAGE_CODE).all().order_by('created_at')[:5]
     
     return render(request, "website/blog-detail.html", {"post": post, "sposts": sposts})
+
+
+def email(request):    
+    subject = 'Thank you for registering to our site'
+    message = ' it  means a world to us '
+    email_from = settings.EMAIL_HOST_USER
+    recipient_list = []   
+    send_mail( subject, message, email_from, recipient_list )  
+    return redirect('index')
+
+
+@csrf_exempt
+def subscribe(request):
+    if request.method == "POST":
+        
+        print(request.body)
+
+        data = json.loads(request.body)
+
+        email = data['email']
+
+        shalf = email.split('@')
+        if shalf[0] == "" or len(shalf) != 2 or shalf[1].count('.') != 1:
+
+            return JsonResponse({
+                "message": "invalid email",
+                "status": "danger"
+            })
+
+        s = Subscriber(email=email)
+
+        try:
+            s.save()
+        except IntegrityError: 
+            return JsonResponse({
+                "message": "you have already registered our newsletter",
+                "status": "danger"
+            }, status=403)
+
+        subject = 'Thank you for registering to our newsletter'
+        message = ' it  means a world to us '
+        email_from = settings.EMAIL_HOST_USER
+        recipient_list = [email,]   
+        send_mail( subject, message, email_from, recipient_list ) 
+
+        return JsonResponse({"message": "Thanks for subscribing to our Newsletter", "status": "success"}, status=201)
+    else:
+        return redirect("index")
