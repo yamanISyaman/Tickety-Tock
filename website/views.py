@@ -1,4 +1,5 @@
 import json
+import os
 from django.db import IntegrityError
 from django.shortcuts import render, redirect
 from django.http import JsonResponse
@@ -161,3 +162,18 @@ def subscribe(request):
         return JsonResponse({"message": "Thanks for subscribing to our Newsletter", "status": "success"}, status=201)
     else:
         return redirect("index")
+    
+    
+def contact_view(request):
+    if request.method == "POST":
+        print(request.POST['email'])
+        data = request.POST
+        
+        send_mail(
+            f"Tickety Tock Contact message from {data['username']}",
+            f"from: {data['username']}, email: {data['email']}\n Subject: {data['subject']}\n Message: {data['message']}", 
+            settings.EMAIL_HOST_USER, 
+            [os.environ['EMAIL_ADMIN'],])
+        return redirect(request.path)
+        
+    return render(request, "website/contact.html")
