@@ -3,7 +3,7 @@
 {% load i18n %}
 {% get_current_language as current_language %}
 
-{% block title %}{% trans "Tcikety Tock - Blogs" %}{% endblock %}
+{% block title %}{% trans "Tcikety Tock - Blog" %}{% endblock %}
 
 {% if current_language == "ar" %}
 {% block style %}
@@ -46,7 +46,7 @@
     <!--Page Title-->
     <section class="page-title" style="background-image:url({% static 'website/images/background/5.jpg' %})">
     	<div class="auto-container">
-        	<h2>Blog</h2>
+        	<h2>{% trans 'Blog' %}</h2>
         </div>
     </section>
     <!--End Page Title-->
@@ -71,12 +71,12 @@
                         <!--Product Category Widget-->
                         <div class="sidebar-widget sidebar-blog-category">
                             <div class="sidebar-title">
-                                <h2>Categories</h2>
+                                <h2>{% trans 'Categories' %}</h2>
                             </div>
                             <ul class="cat-list" style="">
                                 <li>
                                     <div class="popular-tags">
-                                        <a id="category" class="all-filter pressed">All</a>
+                                        <a id="category" class="all-filter pressed">{% trans 'All' %}</a>
                                         {% for c in categories %}
                                                                             
                                             <a id="category" class="btn-filter" data-value={{ c.id }}>{{ c.name }}</a>
@@ -87,7 +87,7 @@
                                 <div>
                                     <br>
                                 </div>
-                                <div class="reset-btn-container" data-text="Show All Products"></div>
+                                <div class="reset-btn-container" data-text="{% trans 'Show All Products' %}"></div>
                             </ul>
                         </div>
 

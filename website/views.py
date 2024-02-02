@@ -7,6 +7,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.core.paginator import Paginator
 from django.core.mail import send_mail
 from django.conf import settings
+from django.utils.translation import gettext_lazy as _
 from .models import Product, Case_Material, Color, Surface_Finish, Collection, Brand, Blog, Blog_Cates, Subscriber
 # Create your views here.
 
@@ -139,7 +140,7 @@ def subscribe(request):
         if shalf[0] == "" or len(shalf) != 2 or shalf[1].count('.') != 1:
 
             return JsonResponse({
-                "message": "invalid email",
+                "message": _("invalid email"),
                 "status": "danger"
             })
 
@@ -149,17 +150,17 @@ def subscribe(request):
             s.save()
         except IntegrityError: 
             return JsonResponse({
-                "message": "you have already registered our newsletter",
+                "message": _("you have already registered our newsletter"),
                 "status": "danger"
             }, status=403)
 
-        subject = 'Thank you for registering to our newsletter'
-        message = ' it  means a world to us '
+        subject = _('Thank you for registering to our newsletter')
+        message = _(' it  means a world to us ')
         email_from = settings.EMAIL_HOST_USER
         recipient_list = [email,]   
         send_mail( subject, message, email_from, recipient_list ) 
 
-        return JsonResponse({"message": "Thanks for subscribing to our Newsletter", "status": "success"}, status=201)
+        return JsonResponse({"message": _("Thanks for subscribing to our Newsletter"), "status": "success"}, status=201)
     else:
         return redirect("index")
     

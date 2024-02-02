@@ -23,8 +23,6 @@ function submitForm() {
     })
     .then(response => response.json())
     .then(result => {
-
-        console.log(result);
         showMessage(result.message, result.status)
     })
 }

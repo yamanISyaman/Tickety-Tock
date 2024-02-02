@@ -19,7 +19,7 @@
      <!--Page Title-->
     <section class="page-title" style="background-image:url({% static 'website/images/background/5.jpg' %})">
     	<div class="auto-container">
-        	<h2>Contact Us</h2>
+        	<h2>{% trans 'Contact Us' %}</h2>
         </div>
     </section>
     <!--End Page Title-->
@@ -29,8 +29,8 @@
 		<div class="auto-container">
 			<!-- Sec Title -->
 			<div class="sec-title">
-				<h2>Get In Touch</h2>
-				<div class="text">Do you have anything in your mind to let us know?  Kindly don't delay to connect to us by means of our contact form.</div>
+				<h2>{% trans 'Get In Touch' %}</h2>
+				<div class="text">{% trans "Do you have anything in your mind to let us know?  Kindly don't delay to connect to us by means of our contact form." %}</div>
 			</div>
 			
 			<div class="row clearfix">
@@ -78,16 +78,16 @@
 						
 						<!-- Contact Info List -->
 						<ul class="contact-info-list">
-							<li><strong>Address :</strong><br>256, Tickety Tock,, New York 24</li>
+							<li><strong>{% trans 'Address' %} :</strong><br>{% trans 'Syria, Damascus, Baramkeh' %}</li>
 						</ul>
 						<!-- Contact Info List -->
 						<ul class="contact-info-list">
-							<li><strong>Phone : </strong><a href="tel:1800-456-7890">1800 456 7890</a></li>
-							<li><strong>Email : </strong><a href="mailto:info@ticketytock.com">info@ticketytock.com</a></li>
+							<li><strong>{% trans 'Phone' %} : </strong><a href="tel:1800-456-7890">+963-912345678</a></li>
+							<li><strong>{% trans 'Email' %} : </strong><a href="mailto:info@ticketytock.com">info@ticketytock.com</a></li>
 						</ul>
 						<!-- Contact Info List -->
 						<ul class="contact-info-list">
-							<li><strong>Opening Hours :</strong><br>8:00 AM – 10:00 PM <br> Monday – Sunday</li>
+							<li><strong>{% trans 'Opening Hours' %} :</strong><br>8:00 AM – 10:00 PM <br> {% trans 'Sunday – Thursday' %}</li>
 						</ul>
 						
 					</div>
@@ -109,9 +109,9 @@
                     data-lng="36.290206"
                     data-type="roadmap"
                     data-hue="#ffc400"
-                    data-title="Damascus, Syria"
+                    data-title="{% trans 'Damascus, Syria, Baramkeh' %}"
                     data-icon-path="{% static 'website/images/icons/map-marker.png' %}"
-                    data-content="09123456789 <br> Mon-Sat: 7.00an - 9.00pm">
+                    data-content="09123456789 <br> {% trans 'Sun-Thu' %}: 7.00an - 9.00pm">
                 </div>
             </div>
         </div>

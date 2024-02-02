@@ -3,7 +3,7 @@
 {% load i18n %}
 {% get_current_language as current_language %}
 
-{% block title %}{% trans "Tickety Tock - Blog" %}{% endblock %}
+{% block title %}{% trans "Tickety Tock - Artical" %}{% endblock %}
 
 
 {% block style %}
@@ -18,7 +18,7 @@
     <!--Page Title-->
     <section class="page-title" style="background-image:url({% static 'website/images/background/5.jpg' %})">
     	<div class="auto-container">
-        	<h2>Blog Details</h2>
+        	<h2>{% trans 'Artical Details' %}</h2>
         </div>
     </section>
     <!--End Page Title-->
@@ -61,7 +61,7 @@
 						
 						<!-- Popular Posts -->
                         <div class="sidebar-widget popular-posts">
-                            <div class="sidebar-title"><h2>Recent Posts</h2></div>
+                            <div class="sidebar-title"><h2>{% trans 'Recent Articals' %}</h2></div>
 
                             {% for p in sposts %}
                             <article class="post">
@@ -70,12 +70,6 @@
                                 <div class="post-info">{{ p.created_at }}</div>
                             </article>
                             {% endfor %}
-
-                            <article class="post">
-                            	<figure class="post-thumb"><a href="blog-detail.html"><img src="{% static 'website/images/resource/post-thumb-2.jpg' %}" alt=""></a></figure>
-                                <div class="text"><a href="blog-detail.html">Organically grow the holistic world view ...</a></div>
-                                <div class="post-info">12 April. 2019</div>
-                            </article>
 
                         </div>
 						
