@@ -95,60 +95,20 @@
             <div class="row clearfix">
 
                 <!-- Service Block -->
+                {% for p in products %}
                 <div class="service-block-three col-lg-3 col-md-6 col-sm-12">
                     <div class="inner-box wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
                         <div class="image">
-                            <a href="residental-interior.html"><img src="{% static 'website/images/resource/service-4.jpg' %}" alt=""></a>
+                            <a href="residental-interior.html"><img src="{{ p.image.url }}" alt=""></a>
                         </div>
                         <div class="lower-content">
-                            <h3><a href="residental-interior.html">25 + Interior Designers</a></h3>
-                            <div class="text">Override the digital divide with additional clickthroughs from DevOps. Nanotechnology imme rsion along the information highway will close the loop.</div>
-                            <a href="residental-interior.html" class="read-more">Read more</a>
+                            <h3><a href="residental-interior.html">{{ p.name }}</a></h3>
+                            <div class="text">{{ p.summary }}</div>
+                            <a href="products/{{ p.slug }}_{{ p.id }}" class="read-more">{% trans 'Read more' %}</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Service Block -->
-                <div class="service-block-three col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp animated" data-wow-delay="250ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 250ms; animation-name: fadeInUp;">
-                        <div class="image">
-                            <a href="office-interior.html"><img src="{% static 'website/images/resource/service-5.jpg' %}" alt=""></a>
-                        </div>
-                        <div class="lower-content">
-                            <h3><a href="office-interior.html">Furtiniture, Decor &amp; More</a></h3>
-                            <div class="text">Override the digital divide with additional clickthroughs from DevOps. Nanotechnology imme rsion along the information ...</div>
-                            <a href="office-interior.html" class="read-more">Read more</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service Block -->
-                <div class="service-block-three col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp animated" data-wow-delay="500ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 500ms; animation-name: fadeInUp;">
-                        <div class="image">
-                            <a href="commercial-interior.html"><img src="{% static 'website/images/resource/service-6.jpg' %}" alt=""></a>
-                        </div>
-                        <div class="lower-content">
-                            <h3><a href="commercial-interior.html">Modular Solutions</a></h3>
-                            <div class="text">Override the digital divide with additional clickthroughs from DevOps. Nanotechnology imme rsion along the information highway will close the loop.</div>
-                            <a href="commercial-interior.html" class="read-more">Read more</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service Block -->
-                <div class="service-block-three col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp animated" data-wow-delay="750ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 750ms; animation-name: fadeInUp;">
-                        <div class="image">
-                            <a href="commercial-interior.html"><img src="{% static 'website/images/resource/service-6.jpg' %}" alt=""></a>
-                        </div>
-                        <div class="lower-content">
-                            <h3><a href="commercial-interior.html">On Site Expertise</a></h3>
-                            <div class="text">Override the digital divide with additional clickthroughs from DevOps. Nanotechnology imme rsion along the information highway will close the loop.</div>
-                            <a href="commercial-interior.html" class="read-more">Read more</a>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
 
             </div>
 
@@ -160,107 +120,6 @@
         </div>
     </section>
     <!-- End Products Section Three -->
-	
-	<!-- Services Section Two -->
-	<section class="services-section-two">
-		<div class="auto-container">
-			<!-- Sec Title -->
-			<div class="sec-title">
-				<h2>{% trans "Categories" %}</h2>
-				<div class="text">{% trans "Our products Categories " %}</div>
-			</div>
-			
-			<div class="row clearfix">
-				
-				<!-- Service Block -->
-				<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="content">
-							<div class="icon-box">
-								<span class="icon flaticon-desk-1"></span>
-							</div>
-							<h3><a href="office-interior.html">Office Interior</a></h3>
-							<div class="text">Lorem Ipsum is  simply my text of the printing and Ipsum is the Ipsum is simply.</div>
-							<a href="office-interior.html" class="read-more">Read More</a>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Service Block -->
-				<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-						<div class="content">
-							<div class="icon-box">
-								<span class="icon flaticon-house-1"></span>
-							</div>
-							<h3><a href="office-interior.html">House Interior</a></h3>
-							<div class="text">Lorem Ipsum is  simply my text of the printing and Ipsum is the Ipsum is simply.</div>
-							<a href="office-interior.html" class="read-more">Read More</a>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Service Block -->
-				<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-						<div class="content">
-							<div class="icon-box">
-								<span class="icon flaticon-shop"></span>
-							</div>
-							<h3><a href="office-interior.html">Restaurant Interior</a></h3>
-							<div class="text">Lorem Ipsum is  simply my text of the printing and Ipsum is the Ipsum is simply.</div>
-							<a href="office-interior.html" class="read-more">Read More</a>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Service Block -->
-				<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="content">
-							<div class="icon-box">
-								<span class="icon flaticon-hospital"></span>
-							</div>
-							<h3><a href="office-interior.html">Hospital Interior</a></h3>
-							<div class="text">Lorem Ipsum is  simply my text of the printing and Ipsum is the Ipsum is simply.</div>
-							<a href="office-interior.html" class="read-more">Read More</a>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Service Block -->
-				<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
-						<div class="content">
-							<div class="icon-box">
-								<span class="icon flaticon-apartment-1"></span>
-							</div>
-							<h3><a href="office-interior.html">Appartment Interior</a></h3>
-							<div class="text">Lorem Ipsum is  simply my text of the printing and Ipsum is the Ipsum is simply.</div>
-							<a href="office-interior.html" class="read-more">Read More</a>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Service Block -->
-				<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms">
-						<div class="content">
-							<div class="icon-box">
-								<span class="icon flaticon-hotel"></span>
-							</div>
-							<h3><a href="office-interior.html">Hospitality Interior</a></h3>
-							<div class="text">Lorem Ipsum is  simply my text of the printing and Ipsum is the Ipsum is simply.</div>
-							<a href="office-interior.html" class="read-more">Read More</a>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-			
-		</div>
-	</section>
-	<!-- End Services Section Two -->
 
     <!-- Counter Section -->
     <section class="counter-section">
@@ -275,9 +134,9 @@
                         <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: hidden; animation-duration: 1500ms; animation-delay: 0ms; animation-name: none;">
                             <div class="content">
                                 <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="2500" data-stop="8">0</span> Year
+                                    <span class="count-text" data-speed="2500" data-stop="49">0</span> {% trans 'Years' %}
                                 </div>
-                                <h4 class="counter-title">Material Warranty</h4>
+                                <h4 class="counter-title">{% trans 'Opend Since' %}</h4>
                             </div>
                         </div>
                     </div>
@@ -287,9 +146,9 @@
                         <div class="inner wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms" style="visibility: hidden; animation-duration: 1500ms; animation-delay: 300ms; animation-name: none;">
                             <div class="content">
                                 <div class="count-outer count-box alternate">
-                                    <span class="count-text" data-speed="3000" data-stop="2500">0</span>+
+                                    <span class="count-text" data-speed="3000" data-stop="300">0</span>+
                                 </div>
-                                <h4 class="counter-title">Homes Completed</h4>
+                                <h4 class="counter-title">{% trans 'Products' %}</h4>
                             </div>
                         </div>
                     </div>
@@ -299,9 +158,9 @@
                         <div class="inner wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: hidden; animation-duration: 1500ms; animation-delay: 600ms; animation-name: none;">
                             <div class="content">
                                 <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="3000" data-stop="200">0</span>+
+                                    <span class="count-text" data-speed="2000" data-stop="15">0</span>+
                                 </div>
-                                <h4 class="counter-title">Interior Designer</h4>
+                                <h4 class="counter-title">{% trans 'Brands' %}</h4>
                             </div>
                         </div>
                     </div>
@@ -311,9 +170,9 @@
                         <div class="inner wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1500ms" style="visibility: hidden; animation-duration: 1500ms; animation-delay: 900ms; animation-name: none;">
                             <div class="content">
                                 <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="2500" data-stop="45">0</span> Days
+                                    <span class="count-text" data-speed="2500" data-stop="24">0</span> {% trans 'Hours' %}
                                 </div>
-                                <h4 class="counter-title">Project Delivery</h4>
+                                <h4 class="counter-title">{% trans 'Customer Service' %}</h4>
                             </div>
                         </div>
                     </div>
@@ -324,86 +183,6 @@
         </div>
     </section>
     <!-- End Counter Section -->
-	
-	<!-- Featured Section -->
-	<section class="featured-section" style="background-image: url({% static 'website/images/background/2.jpg' %})">
-		<div class="auto-container">
-			<!-- Title Box -->
-			<div class="title-box">
-				<h2>Our Work Process</h2>
-			</div>
-			
-			<div class="row clearfix">
-				
-				<!-- Feature Block -->
-				<div class="feature-block col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="icon-outer">
-							<div class="icon-box">
-								<span class="icon flaticon-hand-shake"></span>
-							</div>
-							<div class="feature-number">1</div>
-						</div>
-						<div class="lower-content">
-							<h3><a href="residental-interior.html">Meet Customers</a></h3>
-							<div class="text">Osed quia consequuntur magni dolores eos qui rati one volu ptatem sequi nesciunt.</div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Feature Block -->
-				<div class="feature-block col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
-						<div class="icon-outer">
-							<div class="icon-box">
-								<span class="icon flaticon-answer"></span>
-							</div>
-							<div class="feature-number">2</div>
-						</div>
-						<div class="lower-content">
-							<h3><a href="residental-interior.html">Design Discussion</a></h3>
-							<div class="text">Osed quia consequuntur magni dolores eos qui rati one volu ptatem sequi nesciunt.</div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Feature Block -->
-				<div class="feature-block col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="1500ms">
-						<div class="icon-outer">
-							<div class="icon-box">
-								<span class="icon flaticon-sketch"></span>
-							</div>
-							<div class="feature-number">3</div>
-						</div>
-						<div class="lower-content">
-							<h3><a href="residental-interior.html">Drafting Design</a></h3>
-							<div class="text">Osed quia consequuntur magni dolores eos qui rati one volu ptatem sequi nesciunt.</div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Feature Block -->
-				<div class="feature-block col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="750ms" data-wow-duration="1500ms">
-						<div class="icon-outer">
-							<div class="icon-box">
-								<span class="icon flaticon-house-1"></span>
-							</div>
-							<div class="feature-number">4</div>
-						</div>
-						<div class="lower-content">
-							<h3><a href="residental-interior.html">Implimentation</a></h3>
-							<div class="text">Osed quia consequuntur magni dolores eos qui rati one volu ptatem sequi nesciunt.</div>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-			
-		</div>
-	</section>
-	<!-- End Featured Section -->
 	
 	<!-- News Section -->
 	<section class="news-section">
@@ -416,57 +195,25 @@
 			
 			<div class="row clearfix">
 				
+                {% for p in posts %}
 				<!-- News Block -->
 				<div class="news-block col-lg-4 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="image">
-							<a href="blog-detail.html"><img src="{% static 'website/images/resource/news-1.jpg' %}" alt="" /></a>
+							<a href="blog-detail.html"><img src="{{ p.image.url }}" alt="" /></a>
 						</div>
 						<div class="lower-content">
 							<ul class="post-meta">
-								<li>By <span>Michale</span></li>
-								<li>Modular Kitchen</li>
+                                {% for c in p.category.all %}
+								<li>{{ c.name }}</li>
+                                {% endfor %}
 							</ul>
-							<h3><a href="blog-detail.html">15 Vastu ideas for the main door emphasizes on every par ...</a></h3>
-							<a href="blog-detail.html" class="read-more">Read more <span class="icon flaticon-right-arrow-1"></span></a>
+							<h3><a href="blogs/{{ p.slug }}_{{ p.id }}">{{ p.title }}</a></h3>
+							<a href="blogs/{{ p.slug }}_{{ p.id }}" class="read-more">{% trans 'Read more' %} <span class="icon flaticon-right-arrow-1"></span></a>
 						</div>
 					</div>
 				</div>
-				
-				<!-- News Block -->
-				<div class="news-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInRight" data-wow-delay="250ms" data-wow-duration="1500ms">
-						<div class="image">
-							<a href="blog-detail.html"><img src="{% static 'website/images/resource/news-2.jpg' %}" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<ul class="post-meta">
-								<li>By <span>Michale</span></li>
-								<li>Interior, awesome</li>
-							</ul>
-							<h3><a href="blog-detail.html">Storage ideas for the bedroom by interior designers ...</a></h3>
-							<a href="blog-detail.html" class="read-more">Read more <span class="icon flaticon-right-arrow-1"></span></a>
-						</div>
-					</div>
-				</div>
-				
-				<!-- News Block -->
-				<div class="news-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInRight" data-wow-delay="500ms" data-wow-duration="1500ms">
-						<div class="image">
-							<a href="blog-detail.html"><img src="{% static 'website/images/resource/news-3.jpg' %}" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<ul class="post-meta">
-								<li>By <span>Michale</span></li>
-								<li>Interior, awesome</li>
-							</ul>
-							<h3><a href="blog-detail.html">Kids bedroom design ideas by interior designers in NY</a></h3>
-							<a href="blog-detail.html" class="read-more">Read more <span class="icon flaticon-right-arrow-1"></span></a>
-						</div>
-					</div>
-				</div>
-				
+                {% endfor %}
 			</div>
 			
 		</div>

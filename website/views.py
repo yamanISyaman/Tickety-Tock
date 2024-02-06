@@ -13,7 +13,13 @@ from .models import Product, Case_Material, Color, Surface_Finish, Collection, B
 
 # homepage view
 def index(request):
-    return render(request, 'website/index.html')
+    
+    lang = request.LANGUAGE_CODE
+    
+    return render(request, 'website/index.html', {
+        "products": Product.objects.language(lang).all()[0:4],
+        "posts": Blog.objects.language(lang).all()[0:3]
+    })
 
 
 # products page view

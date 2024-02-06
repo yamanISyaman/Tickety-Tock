@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-02 09:06+0000\n"
+"POT-Creation-Date: 2024-02-06 13:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,8 +39,7 @@ msgstr ""
 msgid "Blog"
 msgstr ""
 
-#: templates/website/blog.html:74 templates/website/index.html:169
-#: templates/website/products.html:84
+#: templates/website/blog.html:74 templates/website/products.html:84
 msgid "Categories"
 msgstr ""
 
@@ -144,42 +143,62 @@ msgstr ""
 msgid "Here are some of our products that you would like"
 msgstr ""
 
-#: templates/website/index.html:170
-msgid "Our products Categories "
+#: templates/website/index.html:107 templates/website/index.html:212
+msgid "Read more"
 msgstr ""
 
-#: templates/website/index.html:413
+#: templates/website/index.html:137
+msgid "Years"
+msgstr ""
+
+#: templates/website/index.html:139
+msgid "Opend Since"
+msgstr ""
+
+#: templates/website/index.html:151 templates/website/layout.html:102
+#: website/models.py:116 website/models.py:117 website/models.py:118
+#: website/models.py:119 website/models.py:120
+msgid "Products"
+msgstr ""
+
+#: templates/website/index.html:163 templates/website/products.html:88
+msgid "Brands"
+msgstr ""
+
+#: templates/website/index.html:173
+msgid "Hours"
+msgstr ""
+
+#: templates/website/index.html:175
+msgid "Customer Service"
+msgstr ""
+
+#: templates/website/index.html:192
 msgid "Need a choosing help? Read our blogs"
 msgstr ""
 
-#: templates/website/index.html:414
+#: templates/website/index.html:193
 msgid "Stay updated with latest trends, inspiration, expert tips and more"
 msgstr ""
 
-#: templates/website/index.html:479
+#: templates/website/index.html:226
 msgid "All that and more"
 msgstr ""
 
-#: templates/website/index.html:480
+#: templates/website/index.html:227
 msgid "Hand Watches for all styles and budgets, Choose from thousands of"
 msgstr ""
 
-#: templates/website/index.html:480
+#: templates/website/index.html:227
 msgid "colors, brands and categories"
 msgstr ""
 
-#: templates/website/index.html:481
+#: templates/website/index.html:228
 msgid "contact us"
 msgstr ""
 
 #: templates/website/layout.html:100
 msgid "Home"
-msgstr ""
-
-#: templates/website/layout.html:102 website/models.py:116
-#: website/models.py:117 website/models.py:118 website/models.py:119
-#: website/models.py:120
-msgid "Products"
 msgstr ""
 
 #: templates/website/layout.html:106
@@ -260,10 +279,6 @@ msgstr ""
 
 #: templates/website/products.html:76
 msgid "Enter Search Keywords"
-msgstr ""
-
-#: templates/website/products.html:88
-msgid "Brands"
 msgstr ""
 
 #: templates/website/products.html:103
@@ -352,22 +367,22 @@ msgstr ""
 msgid "Category"
 msgstr ""
 
-#: website/views.py:143
+#: website/views.py:149
 msgid "invalid email"
 msgstr ""
 
-#: website/views.py:153
+#: website/views.py:159
 msgid "you have already registered our newsletter"
 msgstr ""
 
-#: website/views.py:157
+#: website/views.py:163
 msgid "Thank you for registering to our newsletter"
 msgstr ""
 
-#: website/views.py:158
+#: website/views.py:164
 msgid " it  means a world to us "
 msgstr ""
 
-#: website/views.py:163
+#: website/views.py:169
 msgid "Thanks for subscribing to our Newsletter"
 msgstr ""
