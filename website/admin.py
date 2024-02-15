@@ -1,23 +1,31 @@
 from django.contrib import admin
 from parler.admin import TranslatableAdmin
-from website.models import Product, Case_Material, Collection, Surface_Finish, Brand, Color, Blog, Blog_Cates, Subscriber
+from website.models import (
+    Product,
+    Case_Material,
+    Collection,
+    Surface_Finish,
+    Brand,
+    Color,
+    Blog,
+    Blog_Cates,
+    Subscriber,
+)
 
 
 # customizing admin models
 class ProductAdmin(TranslatableAdmin):
-    
-    prepopulatd_fields = {'slug': ('name',)}
-    list_display = ('name', 'tag')
-    
+    prepopulatd_fields = {"slug": ("name",)}
+    list_display = ("name", "tag")
+
+
 # customizing admin models
 class BlogAdmin(TranslatableAdmin):
-    
-    list_display = ('title', 'slug')
+    list_display = ("title", "slug")
 
-    
+
 class CategoryAdmin(TranslatableAdmin):
-
-    list_display = ('name',)
+    list_display = ("name",)
 
 
 # register models

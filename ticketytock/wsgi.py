@@ -9,8 +9,8 @@ https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/
 
 import os
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ticketytock.settings')
-os.environ.setdefault('DJANGO_COFIGURATION', 'Prod')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ticketytock.settings")
+os.environ.setdefault("DJANGO_COFIGURATION", "Prod")
 
 from configurations.wsgi import get_wsgi_application
 

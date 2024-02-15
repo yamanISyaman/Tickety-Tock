@@ -8,33 +8,30 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 13:34+0000\n"
-"PO-Revision-Date: 2024-02-02 08:50+0000\n"
+"POT-Creation-Date: 2024-02-13 10:30+0000\n"
+"PO-Revision-Date: 2024-02-13 10:35+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
 #: templates/website/blog-detail.html:6
-#, fuzzy
 #| msgid "Tickety Tock - Home"
 msgid "Tickety Tock - Artical"
-msgstr "تيكيتي توك - الرئيسية"
+msgstr "تيكيتي توك - تدوينة"
 
 #: templates/website/blog-detail.html:21
-#, fuzzy
 #| msgid "Product Details"
 msgid "Artical Details"
-msgstr "تفاصيل المنتج"
+msgstr "تفاصيل التدوينة"
 
 #: templates/website/blog-detail.html:64
 msgid "Recent Articals"
-msgstr ""
+msgstr "المقالات الجديدة"
 
 #: templates/website/blog.html:6
 #, fuzzy
@@ -43,7 +40,7 @@ msgid "Tcikety Tock - Blog"
 msgstr "تيكيتي توك - المدونة"
 
 #: templates/website/blog.html:49 templates/website/layout.html:104
-#: website/models.py:168
+#: website/models.py:163
 msgid "Blog"
 msgstr "المدونة"
 
@@ -59,7 +56,7 @@ msgstr "الكل"
 
 #: templates/website/blog.html:90 templates/website/products.html:157
 msgid "Show All Products"
-msgstr "كل المنتجات"
+msgstr "أظهر كل المنتجات"
 
 #: templates/website/blog.html:101 templates/website/products.html:174
 msgid "Oops! Seems Empty, reset the filters or try something else"
@@ -164,12 +161,12 @@ msgid "Years"
 msgstr ""
 
 #: templates/website/index.html:139
-msgid "Opend Since"
+msgid "of Hard Work"
 msgstr ""
 
 #: templates/website/index.html:151 templates/website/layout.html:102
-#: website/models.py:116 website/models.py:117 website/models.py:118
-#: website/models.py:119 website/models.py:120
+#: website/models.py:96 website/models.py:102 website/models.py:108
+#: website/models.py:114 website/models.py:118
 msgid "Products"
 msgstr "المنتجات"
 
@@ -199,7 +196,8 @@ msgstr "كل هذا وأكثر"
 
 #: templates/website/index.html:227
 #, fuzzy
-#| msgid "Hand WAtches for all styles and budgets, Choose from thousands of"
+#| msgid ""
+#| "Hand WAtches for all styles and budgets, Choose from thousands of"
 msgid "Hand Watches for all styles and budgets, Choose from thousands of"
 msgstr "ساعات يدوية من كل الأشكال و الأسعار, اختر من بين الآلاف من"
 
@@ -224,7 +222,8 @@ msgid ""
 "Tickety Tock was opened in 1975 as one small store and every year our name "
 "is spreading wider and wider"
 msgstr ""
-"تيكيتي توك أفتتح عام 1975 كمتجر صغير وكل عام أسمنا ينتشر في العالم أكثر فأكثر"
+"تيكيتي توك أفتتح عام 1975 كمتجر صغير وكل عام أسمنا ينتشر في العالم أكثر "
+"فأكثر"
 
 #: templates/website/layout.html:184
 msgid "Contact Info"
@@ -258,15 +257,16 @@ msgstr "تيكيتي توك - المنتجات"
 msgid "Product Details"
 msgstr "تفاصيل المنتج"
 
-#: templates/website/product-detail.html:62 website/models.py:116
+#: templates/website/product-detail.html:62 website/models.py:95
 msgid "Brand"
 msgstr "الماركة"
 
-#: templates/website/product-detail.html:63 templates/website/products.html:142
+#: templates/website/product-detail.html:63
+#: templates/website/products.html:142
 msgid "Colors"
 msgstr "الألوان"
 
-#: templates/website/product-detail.html:77 website/models.py:106
+#: templates/website/product-detail.html:77 website/models.py:84
 msgid "Description"
 msgstr "الوصف"
 
@@ -316,11 +316,11 @@ msgstr "المجموعات"
 msgid "Our Products"
 msgstr "منتجاتنا"
 
-#: ticketytock/settings.py:114
+#: ticketytock/settings.py:109
 msgid "English"
 msgstr "الإنجليزية"
 
-#: ticketytock/settings.py:115
+#: ticketytock/settings.py:110
 msgid "Arabic"
 msgstr "العربية"
 
@@ -332,83 +332,83 @@ msgstr ""
 msgid "rosetta/"
 msgstr ""
 
-#: website/models.py:11 website/models.py:29 website/models.py:47
-#: website/models.py:65 website/models.py:83 website/models.py:113
-#: website/models.py:143
+#: website/models.py:8 website/models.py:23 website/models.py:37
+#: website/models.py:51 website/models.py:65 website/models.py:90
+#: website/models.py:140
 msgid "Name"
 msgstr "الاسم"
 
-#: website/models.py:86
+#: website/models.py:67
 msgid "Logo"
 msgstr "الشعار"
 
-#: website/models.py:107
+#: website/models.py:85
 msgid "Specifications"
 msgstr "التخصيصات"
 
-#: website/models.py:108
+#: website/models.py:86
 msgid "summary"
 msgstr "الخلاصة"
 
-#: website/models.py:109
+#: website/models.py:87
 msgid "Tag"
 msgstr "علامة"
 
-#: website/models.py:115 website/models.py:167
+#: website/models.py:92 website/models.py:161
 msgid "Image"
 msgstr "الصورة"
 
-#: website/models.py:117
+#: website/models.py:101
 msgid "Case_Material"
 msgstr "مادة_الهيكل"
 
-#: website/models.py:118
+#: website/models.py:107
 msgid "Surface_Finishes"
 msgstr "طلاء_السطح"
 
-#: website/models.py:119
+#: website/models.py:113
 msgid "Collection"
 msgstr "تجميعات"
 
-#: website/models.py:120
+#: website/models.py:118
 #, fuzzy
 #| msgid "Colors"
 msgid "Color"
 msgstr "الألوان"
 
-#: website/models.py:162
+#: website/models.py:156
 msgid "Title"
 msgstr "العنوان"
 
-#: website/models.py:163
+#: website/models.py:157
 #, fuzzy
 #| msgid "Contact"
 msgid "Content"
 msgstr "التواصل"
 
-#: website/models.py:168
+#: website/models.py:163
 #, fuzzy
 #| msgid "Categories"
 msgid "Category"
 msgstr "الفئات"
 
-#: website/views.py:149
+#: website/views.py:184
 msgid "invalid email"
 msgstr ""
 
-#: website/views.py:159
+#: website/views.py:193
 msgid "you have already registered our newsletter"
 msgstr ""
 
-#: website/views.py:163
+#: website/views.py:199
 msgid "Thank you for registering to our newsletter"
 msgstr ""
 
-#: website/views.py:164
+#: website/views.py:200
 msgid " it  means a world to us "
 msgstr ""
 
-#: website/views.py:169
+#: website/views.py:209
 msgid "Thanks for subscribing to our Newsletter"
 msgstr ""
 
@@ -439,8 +439,7 @@ msgstr ""
 #~ msgid "INOZINC"
 #~ msgstr "أينوزنك"
 
-#~ msgid ""
-#~ "INOZINC is a two-component water base inorganic zinc silicate primer."
+#~ msgid "INOZINC is a two-component water base inorganic zinc silicate primer."
 #~ msgstr "هو أساس مائي لا عضوي مركبين يعتمد على سيليكات الزنك."
 
 #~ msgid "grey"
@@ -478,163 +477,125 @@ msgstr ""
 #~ "exposed to severe weather conditions or exposed to moderate chemical "
 #~ "spillage and fumes."
 #~ msgstr ""
-#~ "مضاد ممتاز للصدأ ينفذ مباشرة فوق السطوح المعدنية كأساس وطلاء حيث يؤمن "
-#~ "حماية فائقة ضد التأكسد وخصوصاً في الظروف المناخية القاسية والمتقلبة. "
-#~ "الاستخدام الأمثل لـ إينوزنك هو في الإنشاءات المعدنية والجسور ومنشآت "
-#~ "استخراج النفط والغاز سواء في البحر أو على اليابسة، وفي كافة المنشآت "
-#~ "المعدنية المعرضة لرطوبة عالية وأبخرة مواد كيميائية."
+#~ "مضاد ممتاز للصدأ ينفذ مباشرة فوق السطوح المعدنية كأساس وطلاء حيث يؤمن حماية "
+#~ "فائقة ضد التأكسد وخصوصاً في الظروف المناخية القاسية والمتقلبة. الاستخدام "
+#~ "الأمثل لـ إينوزنك هو في الإنشاءات المعدنية والجسور ومنشآت استخراج النفط "
+#~ "والغاز سواء في البحر أو على اليابسة، وفي كافة المنشآت المعدنية المعرضة "
+#~ "لرطوبة عالية وأبخرة مواد كيميائية."
 
 #~ msgid ""
-#~ " • Excellent long-term performance without topcoating even in marine?"
-#~ "environment.<br>• Single coat application is sufficient for excellent "
-#~ "protection even on surfaces contaminated by firmly adherent rusts.<br>• "
+#~ " • Excellent long-term performance without topcoating even in "
+#~ "marine?environment.<br>• Single coat application is sufficient for excellent"
+#~ " protection even on surfaces contaminated by firmly adherent rusts.<br>• "
 #~ "Fast cure, water resistance and hardness are developed in 2 hours.<br>• "
 #~ "Resistance to mud cracking even at 125 microns thickness.<br>• Easy to "
-#~ "repair, low cost maintenance.<br>• Water base, equipment can be cleaned "
-#~ "up with water.<br>• Self-inspecting over organic contaminants, film "
-#~ "cracks and disbonds immediately if applied over a contaminated surface."
-#~ "<br>• Cost advantage over multi-coat systems.<br>• Suitable to be "
-#~ "topcoated, when required, by epoxy coatings."
+#~ "repair, low cost maintenance.<br>• Water base, equipment can be cleaned up "
+#~ "with water.<br>• Self-inspecting over organic contaminants, film cracks and "
+#~ "disbonds immediately if applied over a contaminated surface.<br>• Cost "
+#~ "advantage over multi-coat systems.<br>• Suitable to be topcoated, when "
+#~ "required, by epoxy coatings."
 #~ msgstr ""
-#~ "• ديمومة ممتازة فهو لا يحتاج الى طلاء ناهي حتى في الظروف المناخية البحرية "
-#~ "القاسية.\n"
-#~ "• تنفيذ طبقة واحدة فقط كافي للحصول على الحماية المطلوبة حتى على السطوح "
-#~ "الحاوية على بذور الصدأ شديدة التصاق بالمعدن.\n"
-#~ "• سريع التصلب، يحقق صلابة ممتازة ومقاومة عالية للماء خلال ساعتين فقط من "
-#~ "تنفيذه.\n"
-#~ "• لا يتشقق حتى عند تنفيذه بسماكة 125 ميكرون.<br>• سهل الإصلاح مما يخفض من "
-#~ "تكاليف الصيانة.<br>• مائي فهو لا يحوي على أبخرة أو روائح ضارة، يتم تنظيف "
-#~ "أدوات التنفيذ بالماء.<br>• يتمتع بقدرة ذاتية على كشف أي نوع من أنواع "
-#~ "الملوثات العضوية حيث تتشقق طبقة الطلاء وتتقشر مباشرة عند تنفيذها على سطح "
-#~ "ملوث.<br>• يمتاز بكلفته المنخفضة نسبياً مقارنة مع باقي الأنظمة التي تعتمد "
-#~ "على الأطلية متعددة الطبقات.<br>• يمكن الطلاء فوقه عند الضرورة بكافة أطلية "
-#~ "الإيبوكسي."
+#~ "• ديمومة ممتازة فهو لا يحتاج الى طلاء ناهي حتى في الظروف المناخية البحرية القاسية.\n"
+#~ "• تنفيذ طبقة واحدة فقط كافي للحصول على الحماية المطلوبة حتى على السطوح الحاوية على بذور الصدأ شديدة التصاق بالمعدن.\n"
+#~ "• سريع التصلب، يحقق صلابة ممتازة ومقاومة عالية للماء خلال ساعتين فقط من تنفيذه.\n"
+#~ "• لا يتشقق حتى عند تنفيذه بسماكة 125 ميكرون.<br>• سهل الإصلاح مما يخفض من تكاليف الصيانة.<br>• مائي فهو لا يحوي على أبخرة أو روائح ضارة، يتم تنظيف أدوات التنفيذ بالماء.<br>• يتمتع بقدرة ذاتية على كشف أي نوع من أنواع الملوثات العضوية حيث تتشقق طبقة الطلاء وتتقشر مباشرة عند تنفيذها على سطح ملوث.<br>• يمتاز بكلفته المنخفضة نسبياً مقارنة مع باقي الأنظمة التي تعتمد على الأطلية متعددة الطبقات.<br>• يمكن الطلاء فوقه عند الضرورة بكافة أطلية الإيبوكسي."
 
 #~ msgid ""
-#~ "• Method of Application :\tConventional spray, nylon or polyester bruch "
-#~ "for small area only. When applying INOZINC Primer it is important to keep "
-#~ "the product stirred and to maintain a flow to prevent zinc settling in "
-#~ "the spray lines. Also, it is vital to use spray equipment that has not "
-#~ "been contaminated with organic solvents<br>• Mixing Ratio :\t3Kg (Comp A) "
-#~ "to 7Kg (Comp B)<br>• Mixing :\tAdd Comp.B (powder) to Comp. A (liquid) "
-#~ "and stir well before application in order to ensure that a uniform "
-#~ "consistency is achieved. Never mix more material than can be used within "
-#~ "potlife. Mixed materials not used within potlife must be discarded.<br>• "
-#~ "Pot life :\t8 hours (higher temperatures will shorten polife sharply)."
-#~ "<br>• Thinner / Cleaner :\tDo not thin. Clean applying tools by hot water."
-#~ "<br>• Application Temperature :\t5-40 ?C at a RH not more than 85%% ."
-#~ "<br>• Curing :\tThe reaction between the two-component (A & B) can not be "
-#~ "guaranteed unless a temperature of at least 5°C is maintained for the "
-#~ "mixture and the substrate until complete curing. Temperature of substrate "
-#~ "should be at least 3°C above dew point to avoid moisture condensation "
-#~ "during application. Relative humidity during application and initial "
-#~ "drying should not exceed 85%%.<br>• Note :\t• Coated surfaces by INOZINC "
-#~ "should not be exposed to water, chemical fumes, or mechanical stresses "
-#~ "before it is fully cured."
+#~ "• Method of Application :\tConventional spray, nylon or polyester bruch for "
+#~ "small area only. When applying INOZINC Primer it is important to keep the "
+#~ "product stirred and to maintain a flow to prevent zinc settling in the spray"
+#~ " lines. Also, it is vital to use spray equipment that has not been "
+#~ "contaminated with organic solvents<br>• Mixing Ratio :\t3Kg (Comp A) to 7Kg "
+#~ "(Comp B)<br>• Mixing :\tAdd Comp.B (powder) to Comp. A (liquid) and stir "
+#~ "well before application in order to ensure that a uniform consistency is "
+#~ "achieved. Never mix more material than can be used within potlife. Mixed "
+#~ "materials not used within potlife must be discarded.<br>• Pot life :\t8 "
+#~ "hours (higher temperatures will shorten polife sharply).<br>• Thinner / "
+#~ "Cleaner :\tDo not thin. Clean applying tools by hot water.<br>• Application "
+#~ "Temperature :\t5-40 ?C at a RH not more than 85%% .<br>• Curing :\tThe "
+#~ "reaction between the two-component (A & B) can not be guaranteed unless a "
+#~ "temperature of at least 5°C is maintained for the mixture and the substrate "
+#~ "until complete curing. Temperature of substrate should be at least 3°C above"
+#~ " dew point to avoid moisture condensation during application. Relative "
+#~ "humidity during application and initial drying should not exceed 85%%.<br>• "
+#~ "Note :\t• Coated surfaces by INOZINC should not be exposed to water, "
+#~ "chemical fumes, or mechanical stresses before it is fully cured."
 #~ msgstr ""
-#~ "• أداة الاستخدام :\tبالبخ العادي، ويمكن استخدام الفرشاة (نايلون أو "
-#~ "بوليستر) للمساحات الصغيرة. وعند تنفيذ الـ إينوزنك يجب عدم التوقف عن تحريك "
-#~ "العبوة أثناء التنفيذ وذلك لتجنب تصلب الزنك أثناء البخ. كما يجب استخدام "
-#~ "أجهزة بخ غير ملوثة بمذيبات عضوية.<br>• نسبة المزج :\t(وزناً) : 3 – 7 (آ "
-#~ "إلى ب).<br>• طريقة المزج :\tيتم سكب المركب ب (البودرة) فوق المركب آ "
-#~ "(السائل) بالنسبة المحددة مع مراعاة عدم مزج كميات أكبر من المواد المراد "
-#~ "استخدامها خلال فترة صلاحية المزيج، وفي حال بدء ظهور علامات التفاعل وذلك "
-#~ "بازدياد اللزوجة وظهور تجلطات قبل الاستخدام يجب إتلاف المزيج وعدم استخدامه."
-#~ "<br>• الصلاحية بعد المزج :\t8 ساعات (درجات الحرارة الأعلى تؤدي إلى انخفاض "
-#~ "مدة الصلاحية بشدة).<br>• المنظف :\tلا داعي للتمديد بالماء، ونظراً لمدة "
-#~ "الصلاحية المحدودة بعد مزج مركبيه يجب تنظيف كافة أدوات المزج والتنفيذ "
-#~ "بالماء الساخن فور الانتهاء من التنفيذ.<br>• درجة الحرارة أثناء التنفيذ :"
-#~ "\t5 -40م°<br>• ملاحظة : \n"
-#~ "• إن تفاعل مركبي الـ إينوزنك (آ، ب) لا يمكن أن يتم بشكل صحيح إلا إذا بقيت "
-#~ "درجة الحرارة المزيج والسطوح المراد طلاؤها أعلى من5°م حتى تمام التفاعل. "
-#~ "ويجب أن تكون درجة حرارة السطوح أعلى من درجة الندى بـ 3°م على الأقل لتجنب "
-#~ "تكاثف البخار عليها أثناء التنفيذ. كما أن الرطوبة النسبية للجو يجب أن لا "
-#~ "تتجاوز الـ 85% بالدرجة 20°م (أثناء التنفيذ والجفاف الأولي للسطح). • يجب "
-#~ "عدم تعريض السطوح المطلية بـ إينوزنك للماء وللأبخرة الكيميائية والضغوط "
-#~ "الميكانيكية قبل انتهاء التفاعل."
+#~ "• أداة الاستخدام :\tبالبخ العادي، ويمكن استخدام الفرشاة (نايلون أو بوليستر) للمساحات الصغيرة. وعند تنفيذ الـ إينوزنك يجب عدم التوقف عن تحريك العبوة أثناء التنفيذ وذلك لتجنب تصلب الزنك أثناء البخ. كما يجب استخدام أجهزة بخ غير ملوثة بمذيبات عضوية.<br>• نسبة المزج :\t(وزناً) : 3 – 7 (آ إلى ب).<br>• طريقة المزج :\tيتم سكب المركب ب (البودرة) فوق المركب آ (السائل) بالنسبة المحددة مع مراعاة عدم مزج كميات أكبر من المواد المراد استخدامها خلال فترة صلاحية المزيج، وفي حال بدء ظهور علامات التفاعل وذلك بازدياد اللزوجة وظهور تجلطات قبل الاستخدام يجب إتلاف المزيج وعدم استخدامه.<br>• الصلاحية بعد المزج :\t8 ساعات (درجات الحرارة الأعلى تؤدي إلى انخفاض مدة الصلاحية بشدة).<br>• المنظف :\tلا داعي للتمديد بالماء، ونظراً لمدة الصلاحية المحدودة بعد مزج مركبيه يجب تنظيف كافة أدوات المزج والتنفيذ بالماء الساخن فور الانتهاء من التنفيذ.<br>• درجة الحرارة أثناء التنفيذ :\t5 -40م°<br>• ملاحظة : \n"
+#~ "• إن تفاعل مركبي الـ إينوزنك (آ، ب) لا يمكن أن يتم بشكل صحيح إلا إذا بقيت درجة الحرارة المزيج والسطوح المراد طلاؤها أعلى من5°م حتى تمام التفاعل. ويجب أن تكون درجة حرارة السطوح أعلى من درجة الندى بـ 3°م على الأقل لتجنب تكاثف البخار عليها أثناء التنفيذ. كما أن الرطوبة النسبية للجو يجب أن لا تتجاوز الـ 85% بالدرجة 20°م (أثناء التنفيذ والجفاف الأولي للسطح). • يجب عدم تعريض السطوح المطلية بـ إينوزنك للماء وللأبخرة الكيميائية والضغوط الميكانيكية قبل انتهاء التفاعل."
 
 #~ msgid ""
-#~ "• Component A :\tliquid<br>• Component B :\tpowder<br>• Gloss :"
-#~ "\tflat<br>• Volume Solids :\t65 %%<br>• VOC :\t0.0 g/L<br>• Flexibility :"
-#~ "\tVery Good<br>• Solvent Splash and Spill Resistance :\tExcellent<br>• "
-#~ "Temperature Resistance :\t375 ?C<br>• Recommended film thickness :"
-#~ "\t75-125 microns “dry”<br>• Theoretical spreading rate :\t8.7 m²/L at 75 "
-#~ "microns “dry”<br>• Water resistance :\tExcellent<br>• Abrasian "
-#~ "Resistance :\tExcellent<br>• Number of Coats :\t1<br>• Specific Gravity "
-#~ "(mixed) :\t2.79 kg/L (DIN 51757).<br>• Packaging :\tComponent A "
-#~ "(liquid) : 3 Kg in 1 metal can Component B (powder) : 7 Kg in 1 metal "
-#~ "can<br>• Weather Resistance :\tExcellent"
+#~ "• Component A :\tliquid<br>• Component B :\tpowder<br>• Gloss :\tflat<br>• "
+#~ "Volume Solids :\t65 %%<br>• VOC :\t0.0 g/L<br>• Flexibility :\tVery "
+#~ "Good<br>• Solvent Splash and Spill Resistance :\tExcellent<br>• Temperature "
+#~ "Resistance :\t375 ?C<br>• Recommended film thickness :\t75-125 microns "
+#~ "“dry”<br>• Theoretical spreading rate :\t8.7 m²/L at 75 microns “dry”<br>• "
+#~ "Water resistance :\tExcellent<br>• Abrasian Resistance :\tExcellent<br>• "
+#~ "Number of Coats :\t1<br>• Specific Gravity (mixed) :\t2.79 kg/L (DIN "
+#~ "51757).<br>• Packaging :\tComponent A (liquid) : 3 Kg in 1 metal can "
+#~ "Component B (powder) : 7 Kg in 1 metal can<br>• Weather Resistance "
+#~ ":\tExcellent"
 #~ msgstr ""
 #~ "• مركب أ :\tسائل<br>• مركب ب : بودرة<br>• اللمعة :\tمت<br>• المحتوى من "
-#~ "المواد الصلبة :\t65 % حجماً<br>• المحتوى من المركبات العضوية المتطايرة :"
-#~ "\t0 غ/ لتر (ASTM-D3960)<br>• الليونة :\tجيدة جداً<br>• المقاومة لأبخرة "
-#~ "المذيبات :\tممتازة<br>• المقاومة لدرجات الحرارة :\t375 °م<br>• سماكة "
-#~ "الفيلم المقترحة :\t75-125 ميكرون (جاف)<br>• معدل التغطية النظري :\t8.7 م2/"
-#~ "لتر بسماكة 75 ميكرون (جاف)<br>• قابلية الغسيل :\tممتازة<br>• مقاومة "
-#~ "الاحتكاك :\tممتازة<br>• عدد أوجه الطلاء :\t1<br>• الكثافة بعد المزج :"
-#~ "\t2.79 كغ/لتر (DIN 51757)<br>• العبوات :\tالمركب آ (سائل) : 3 كغ في عبوة "
-#~ "معدنية المركب ب (بودرة) : 7 كغ في عبوة معدنية"
+#~ "المواد الصلبة :\t65 % حجماً<br>• المحتوى من المركبات العضوية المتطايرة :\t0 "
+#~ "غ/ لتر (ASTM-D3960)<br>• الليونة :\tجيدة جداً<br>• المقاومة لأبخرة المذيبات "
+#~ ":\tممتازة<br>• المقاومة لدرجات الحرارة :\t375 °م<br>• سماكة الفيلم المقترحة "
+#~ ":\t75-125 ميكرون (جاف)<br>• معدل التغطية النظري :\t8.7 م2/لتر بسماكة 75 "
+#~ "ميكرون (جاف)<br>• قابلية الغسيل :\tممتازة<br>• مقاومة الاحتكاك "
+#~ ":\tممتازة<br>• عدد أوجه الطلاء :\t1<br>• الكثافة بعد المزج :\t2.79 كغ/لتر "
+#~ "(DIN 51757)<br>• العبوات :\tالمركب آ (سائل) : 3 كغ في عبوة معدنية المركب ب "
+#~ "(بودرة) : 7 كغ في عبوة معدنية"
 
 #~ msgid ""
-#~ "Well-prepared-surfaces is an essential condition of coating "
-#~ "successfulness. In general, surface must be clean, dry, undamaged and "
-#~ "free of all contaminants prior to coating.<br>STEEL or GALVANIZING:"
-#~ "<br>Remove all oil , grease, wax…etc from the surface to be coated by "
-#~ "thinner S100 or S405.<br>Apply INOZINC as soon as possible after surface "
-#~ "preparation to prevent any contamination."
+#~ "Well-prepared-surfaces is an essential condition of coating successfulness. "
+#~ "In general, surface must be clean, dry, undamaged and free of all "
+#~ "contaminants prior to coating.<br>STEEL or GALVANIZING:<br>Remove all oil , "
+#~ "grease, wax…etc from the surface to be coated by thinner S100 or "
+#~ "S405.<br>Apply INOZINC as soon as possible after surface preparation to "
+#~ "prevent any contamination."
 #~ msgstr ""
-#~ "إن التحضير الجيد للسطح هو شرط أساسي من شروط نجاح التنفيذ، لذلك يجب أن "
-#~ "يكون السطح قبل التنفيذ (نظيفاً وجافاً ومستوياً وخالياً من أي نوع من أنواع "
-#~ "البقايا أو الشوائب).\n"
-#~ "السطوح المعدنية:<br>قبل التنفيذ يجب تنظيف السطح المراد طلاؤه من الزيوت "
-#~ "والشحوم والمواد الشمعية…الخ بواسطة التنر S100 أو S405. \n"
-#~ " <br>يجب أن ينفذ الأساس إينوزنك فور الانتهاء من تحضير السطح لتجنب فقدان "
-#~ "السطح جاهزيته."
+#~ "إن التحضير الجيد للسطح هو شرط أساسي من شروط نجاح التنفيذ، لذلك يجب أن يكون السطح قبل التنفيذ (نظيفاً وجافاً ومستوياً وخالياً من أي نوع من أنواع البقايا أو الشوائب).\n"
+#~ "السطوح المعدنية:<br>قبل التنفيذ يجب تنظيف السطح المراد طلاؤه من الزيوت والشحوم والمواد الشمعية…الخ بواسطة التنر S100 أو S405. \n"
+#~ " <br>يجب أن ينفذ الأساس إينوزنك فور الانتهاء من تحضير السطح لتجنب فقدان السطح جاهزيته."
 
 #~ msgid ""
-#~ "• Dry to Touch :\t15 minutes (ASTM-D1640).<br>• Dry to Handle :\t30 "
-#~ "minutes (ASTM-D1640).<br>• Fully Cured :\t2 hours<br>• Note :\tDrying "
-#~ "times can be affected by many factors such as temperature, ventilation "
-#~ "and coat thickness. Relative humidity should not exceed 85%%. Higher "
-#~ "temperatures will shorten the drying times."
+#~ "• Dry to Touch :\t15 minutes (ASTM-D1640).<br>• Dry to Handle :\t30 minutes "
+#~ "(ASTM-D1640).<br>• Fully Cured :\t2 hours<br>• Note :\tDrying times can be "
+#~ "affected by many factors such as temperature, ventilation and coat "
+#~ "thickness. Relative humidity should not exceed 85%%. Higher temperatures "
+#~ "will shorten the drying times."
 #~ msgstr ""
 #~ "• الجفاف الأولي :\t15 دقيقة (ASTM-D1640).<br>• الجفاف النهائي :\t30 دقيقة "
-#~ "(ASTM-D1640).<br>• التفاعل النهائي :\t2 ساعة.<br>• ملاحظة :\t• الطلاء "
-#~ "فوقه : يمكن الطلاء فوق الـ إينوزنك بعد 24 ساعة من تنفيذه بسماكة 75 ميكرون "
-#~ "أو بعد 36 ساعة بسماكة 125 ميكرون. يتأثر زمن الجفاف بعدة عوامل مثل درجة "
-#~ "الحرارة، التهوية وسماكة طبقة الطلاء؛ كما يجب أن لا تتجاوز رطوبة الجو "
-#~ "النسبية الـ 85%. درجات الحرارة الأعلى تؤدي إلى انخفاض زمن الجفاف بشدة."
+#~ "(ASTM-D1640).<br>• التفاعل النهائي :\t2 ساعة.<br>• ملاحظة :\t• الطلاء فوقه :"
+#~ " يمكن الطلاء فوق الـ إينوزنك بعد 24 ساعة من تنفيذه بسماكة 75 ميكرون أو بعد "
+#~ "36 ساعة بسماكة 125 ميكرون. يتأثر زمن الجفاف بعدة عوامل مثل درجة الحرارة، "
+#~ "التهوية وسماكة طبقة الطلاء؛ كما يجب أن لا تتجاوز رطوبة الجو النسبية الـ 85%."
+#~ " درجات الحرارة الأعلى تؤدي إلى انخفاض زمن الجفاف بشدة."
 
 #~ msgid ""
-#~ "• Keep components A & B in a cool and well ventilated place, protected "
-#~ "from freeze, heat and direct sunlight.<br>• Shelf life is two years from "
-#~ "packing date in unopened original containers at 5 to 40°C. Containers "
-#~ "should be kept tightly closed.<br>Safety:<br>• Well ventilated conditions "
-#~ "should be provided during application.<br>• Do not breathe or inhale mist."
-#~ "<br>• Wear air-mask and avoid skin or eye contact.<br>• This Product is "
-#~ "for professional use only. Not for residential use."
+#~ "• Keep components A & B in a cool and well ventilated place, protected from "
+#~ "freeze, heat and direct sunlight.<br>• Shelf life is two years from packing "
+#~ "date in unopened original containers at 5 to 40°C. Containers should be kept"
+#~ " tightly closed.<br>Safety:<br>• Well ventilated conditions should be "
+#~ "provided during application.<br>• Do not breathe or inhale mist.<br>• Wear "
+#~ "air-mask and avoid skin or eye contact.<br>• This Product is for "
+#~ "professional use only. Not for residential use."
 #~ msgstr ""
-#~ "يحفظ المركبان أ و ب في مكان بارد وجيد التهوية بعيداً عن الحرارة وأشعة "
-#~ "الشمس المباشرة.\n"
-#~ "مدة الصلاحية: عامان بدءاً من تاريخ التعبئة شريطة حفظه في عبواته الأصلية "
-#~ "المحكمة الإغلاق بدرجة حرارة تتراوح بين 5 - 40°م.<br>تحذير :<br>• يجب أن "
-#~ "يكون المكان أثناء التنفيذ جيد التهوية.<br>• يجب تجنب استنشاق الأبخرة."
-#~ "<br>• يجب استخدام الكمامة وتجنب ملامسة المادة للجلد أو العين.<br>• هذا "
-#~ "المنتج غير مخصص للاستخدامات المنزلية."
+#~ "يحفظ المركبان أ و ب في مكان بارد وجيد التهوية بعيداً عن الحرارة وأشعة الشمس المباشرة.\n"
+#~ "مدة الصلاحية: عامان بدءاً من تاريخ التعبئة شريطة حفظه في عبواته الأصلية المحكمة الإغلاق بدرجة حرارة تتراوح بين 5 - 40°م.<br>تحذير :<br>• يجب أن يكون المكان أثناء التنفيذ جيد التهوية.<br>• يجب تجنب استنشاق الأبخرة.<br>• يجب استخدام الكمامة وتجنب ملامسة المادة للجلد أو العين.<br>• هذا المنتج غير مخصص للاستخدامات المنزلية."
 
 #~ msgid ""
-#~ "information in this data sheet and in all our data sheets are given to "
-#~ "the best of our knowledge based on laboratory testing and practical "
-#~ "experience. Final results depend on following instructions and on "
-#~ "consumer skill. Our responsibility is limited to providing products that "
-#~ "Conform to samples and specimens provided by us. Due to technical needs, "
-#~ "we reserve the right to change any given specification without notice."
+#~ "information in this data sheet and in all our data sheets are given to the "
+#~ "best of our knowledge based on laboratory testing and practical experience. "
+#~ "Final results depend on following instructions and on consumer skill. Our "
+#~ "responsibility is limited to providing products that Conform to samples and "
+#~ "specimens provided by us. Due to technical needs, we reserve the right to "
+#~ "change any given specification without notice."
 #~ msgstr ""
-#~ "كافة المعلومات الواردة في نشرتنا هذه وفي جميع نشراتنا الفنية هي نتيجة "
-#~ "لتجارب مخبرية وخبرات عملية وتبقى النتائج النهائية متوقفة على مهارة "
-#~ "المستهلك ومدى التزامه بالتعليمات، وتنحصر مسؤوليتنا بتقديم منتجات مطابقة "
-#~ "للمساطر والعينات المقدمة من قبلنا كما تحتفظ الشركة بحق تغيير المواصفات "
-#~ "بدون إعلام مسبق."
+#~ "كافة المعلومات الواردة في نشرتنا هذه وفي جميع نشراتنا الفنية هي نتيجة لتجارب"
+#~ " مخبرية وخبرات عملية وتبقى النتائج النهائية متوقفة على مهارة المستهلك ومدى "
+#~ "التزامه بالتعليمات، وتنحصر مسؤوليتنا بتقديم منتجات مطابقة للمساطر والعينات "
+#~ "المقدمة من قبلنا كما تحتفظ الشركة بحق تغيير المواصفات بدون إعلام مسبق."
 
 #~ msgid "Materials"
 #~ msgstr "المواد"
@@ -661,11 +622,11 @@ msgstr ""
 #~ msgstr "دهانات العظمة - الرئيسية"
 
 #~ msgid ""
-#~ "Azmeh Paints was established 1955 as one of the very few factories of "
-#~ "paint industry at that time in Syria."
+#~ "Azmeh Paints was established 1955 as one of the very few factories of paint "
+#~ "industry at that time in Syria."
 #~ msgstr ""
-#~ "تأسست شركة العظمة في عام ١٩٥٥ كواحدة من أقل شركات صناعة الدهان بذلك الوقت "
-#~ "في سوريا"
+#~ "تأسست شركة العظمة في عام ١٩٥٥ كواحدة من أقل شركات صناعة الدهان بذلك الوقت في"
+#~ " سوريا"
 
 #~ msgid "Azmeh Paints - Products"
 #~ msgstr "دهانات العظمة - الرئيسية"

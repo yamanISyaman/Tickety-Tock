@@ -6,7 +6,7 @@ from django.conf import settings
 from django.utils.translation import gettext_lazy as _
 
 urlpatterns = i18n_patterns(
-    path(_('admin/'), admin.site.urls),
-    path(_('rosetta/'), include('rosetta.urls')),
-    path('', include('website.urls'))
+    path(_("admin/"), admin.site.urls),
+    path(_("rosetta/"), include("rosetta.urls")),
+    path("", include("website.urls")),
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

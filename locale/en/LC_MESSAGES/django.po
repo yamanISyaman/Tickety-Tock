@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 13:34+0000\n"
+"POT-Creation-Date: 2024-02-13 10:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgid "Tcikety Tock - Blog"
 msgstr ""
 
 #: templates/website/blog.html:49 templates/website/layout.html:104
-#: website/models.py:168
+#: website/models.py:163
 msgid "Blog"
 msgstr ""
 
@@ -152,12 +152,12 @@ msgid "Years"
 msgstr ""
 
 #: templates/website/index.html:139
-msgid "Opend Since"
+msgid "of Hard Work"
 msgstr ""
 
 #: templates/website/index.html:151 templates/website/layout.html:102
-#: website/models.py:116 website/models.py:117 website/models.py:118
-#: website/models.py:119 website/models.py:120
+#: website/models.py:96 website/models.py:102 website/models.py:108
+#: website/models.py:114 website/models.py:118
 msgid "Products"
 msgstr ""
 
@@ -239,7 +239,7 @@ msgstr ""
 msgid "Product Details"
 msgstr ""
 
-#: templates/website/product-detail.html:62 website/models.py:116
+#: templates/website/product-detail.html:62 website/models.py:95
 msgid "Brand"
 msgstr ""
 
@@ -247,7 +247,7 @@ msgstr ""
 msgid "Colors"
 msgstr ""
 
-#: templates/website/product-detail.html:77 website/models.py:106
+#: templates/website/product-detail.html:77 website/models.py:84
 msgid "Description"
 msgstr ""
 
@@ -297,11 +297,11 @@ msgstr ""
 msgid "Our Products"
 msgstr ""
 
-#: ticketytock/settings.py:114
+#: ticketytock/settings.py:109
 msgid "English"
 msgstr ""
 
-#: ticketytock/settings.py:115
+#: ticketytock/settings.py:110
 msgid "Arabic"
 msgstr ""
 
@@ -313,76 +313,76 @@ msgstr ""
 msgid "rosetta/"
 msgstr ""
 
-#: website/models.py:11 website/models.py:29 website/models.py:47
-#: website/models.py:65 website/models.py:83 website/models.py:113
-#: website/models.py:143
+#: website/models.py:8 website/models.py:23 website/models.py:37
+#: website/models.py:51 website/models.py:65 website/models.py:90
+#: website/models.py:140
 msgid "Name"
 msgstr ""
 
-#: website/models.py:86
+#: website/models.py:67
 msgid "Logo"
 msgstr ""
 
-#: website/models.py:107
+#: website/models.py:85
 msgid "Specifications"
 msgstr ""
 
-#: website/models.py:108
+#: website/models.py:86
 msgid "summary"
 msgstr ""
 
-#: website/models.py:109
+#: website/models.py:87
 msgid "Tag"
 msgstr ""
 
-#: website/models.py:115 website/models.py:167
+#: website/models.py:92 website/models.py:161
 msgid "Image"
 msgstr ""
 
-#: website/models.py:117
+#: website/models.py:101
 msgid "Case_Material"
 msgstr ""
 
-#: website/models.py:118
+#: website/models.py:107
 msgid "Surface_Finishes"
 msgstr ""
 
-#: website/models.py:119
+#: website/models.py:113
 msgid "Collection"
 msgstr ""
 
-#: website/models.py:120
+#: website/models.py:118
 msgid "Color"
 msgstr ""
 
-#: website/models.py:162
+#: website/models.py:156
 msgid "Title"
 msgstr ""
 
-#: website/models.py:163
+#: website/models.py:157
 msgid "Content"
 msgstr ""
 
-#: website/models.py:168
+#: website/models.py:163
 msgid "Category"
 msgstr ""
 
-#: website/views.py:149
+#: website/views.py:184
 msgid "invalid email"
 msgstr ""
 
-#: website/views.py:159
+#: website/views.py:193
 msgid "you have already registered our newsletter"
 msgstr ""
 
-#: website/views.py:163
+#: website/views.py:199
 msgid "Thank you for registering to our newsletter"
 msgstr ""
 
-#: website/views.py:164
+#: website/views.py:200
 msgid " it  means a world to us "
 msgstr ""
 
-#: website/views.py:169
+#: website/views.py:209
 msgid "Thanks for subscribing to our Newsletter"
 msgstr ""
