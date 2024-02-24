@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-13 10:30+0000\n"
-"PO-Revision-Date: 2024-02-13 10:35+0000\n"
+"POT-Creation-Date: 2024-02-24 15:11+0000\n"
+"PO-Revision-Date: 2024-02-24 15:16+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -20,12 +20,10 @@ msgstr ""
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
 #: templates/website/blog-detail.html:6
-#| msgid "Tickety Tock - Home"
 msgid "Tickety Tock - Artical"
-msgstr "تيكيتي توك - تدوينة"
+msgstr "تيكيتي توك - مقال"
 
 #: templates/website/blog-detail.html:21
-#| msgid "Product Details"
 msgid "Artical Details"
 msgstr "تفاصيل التدوينة"
 
@@ -34,8 +32,6 @@ msgid "Recent Articals"
 msgstr "المقالات الجديدة"
 
 #: templates/website/blog.html:6
-#, fuzzy
-#| msgid "Tcikety Tock - Blogs"
 msgid "Tcikety Tock - Blog"
 msgstr "تيكيتي توك - المدونة"
 
@@ -44,21 +40,21 @@ msgstr "تيكيتي توك - المدونة"
 msgid "Blog"
 msgstr "المدونة"
 
-#: templates/website/blog.html:74 templates/website/products.html:84
+#: templates/website/blog.html:74 templates/website/products.html:83
 msgid "Categories"
 msgstr "الفئات"
 
-#: templates/website/blog.html:79 templates/website/products.html:92
-#: templates/website/products.html:107 templates/website/products.html:120
-#: templates/website/products.html:133 templates/website/products.html:146
+#: templates/website/blog.html:79 templates/website/products.html:91
+#: templates/website/products.html:106 templates/website/products.html:119
+#: templates/website/products.html:132 templates/website/products.html:145
 msgid "All"
 msgstr "الكل"
 
-#: templates/website/blog.html:90 templates/website/products.html:157
+#: templates/website/blog.html:90 templates/website/products.html:156
 msgid "Show All Products"
 msgstr "أظهر كل المنتجات"
 
-#: templates/website/blog.html:101 templates/website/products.html:174
+#: templates/website/blog.html:101 templates/website/products.html:173
 msgid "Oops! Seems Empty, reset the filters or try something else"
 msgstr "يبدو أنه لا يوجد أي منتجات، أعد ضبط الفلتر أو جرّب شيئاً آخر"
 
@@ -86,7 +82,8 @@ msgstr ""
 msgid "Address"
 msgstr "العنوان"
 
-#: templates/website/contact.html:81 templates/website/layout.html:188
+#: templates/website/contact.html:81 templates/website/contact.html:112
+#: templates/website/layout.html:188
 msgid "Syria, Damascus, Baramkeh"
 msgstr "سوريا، دمشق، برامكة"
 
@@ -106,10 +103,6 @@ msgstr "ساعات الافتتاح"
 msgid "Sunday – Thursday"
 msgstr "الأحد - الخميس"
 
-#: templates/website/contact.html:112
-msgid "Damascus, Syria, Baramkeh"
-msgstr ""
-
 #: templates/website/contact.html:114
 msgid "Sun-Thu"
 msgstr "الأحد - الخميس"
@@ -122,14 +115,12 @@ msgstr "تيكيتي توك - الرئيسية"
 msgid "We make your dream <br> style a reality"
 msgstr "سنحول موضة أحلامك <br>إلى حقيقة"
 
-#: templates/website/index.html:43 templates/website/index.html:57
-#: templates/website/index.html:71
+#: templates/website/index.html:43
 msgid ""
-"Since 1975, we've been weaving tales of time through the threads of your "
-"life, guided by the finest colors, tools, and expertise."
+"Travel through history with our handwatches that we carefully choose since "
+"1975"
 msgstr ""
-"منذ عام 1975, لقد نسجنا حكايات الزمن عبر خيوط حياتك، مسترشدين بأرقى الألوان "
-"والأدوات والخبرات."
+"سافر عبر الزمن من خلال منتجاتنا التي دائماً ما ننتقيها بعناية منذ 1975"
 
 #: templates/website/index.html:45 templates/website/index.html:59
 #: templates/website/index.html:73
@@ -137,12 +128,21 @@ msgid "Know more"
 msgstr "إعرف المزيد"
 
 #: templates/website/index.html:56
-msgid "colors that fit <br> Your Personality"
-msgstr "ألوان تناسب <br> شخصيتك"
+msgid "Customer Support <br>At Any Time You Need it"
+msgstr "خدمة الزبائن<br> حاضرة في أي وقت تحتاجه"
+
+#: templates/website/index.html:57
+msgid "Your satisfaction is our first goal, so don't hesitate to contact us"
+msgstr "رضاكم هو أولويتنا, فلا تتردد في التواصل معنا"
 
 #: templates/website/index.html:70
-msgid "Customer Support <br>At Any Time You Need it"
-msgstr "خدمة زبائن<br> في أي وقت تحتاجه"
+msgid " We care so <br>We share "
+msgstr "نشارك أخبارنا لأننا نهتم"
+
+#: templates/website/index.html:71
+msgid ""
+"stay in the loop of our latest news and offers, by following to our Blog"
+msgstr "ابقى على اطلاع بآخر أخبارنا ومنتجاتنا عن طريق متابعة مدونتنا"
 
 #: templates/website/index.html:91
 msgid "Our Featured Products"
@@ -154,15 +154,15 @@ msgstr "هذه بعض منتجاتنا التي قد تعجبك"
 
 #: templates/website/index.html:107 templates/website/index.html:212
 msgid "Read more"
-msgstr ""
+msgstr "اقرأ المزيد"
 
 #: templates/website/index.html:137
 msgid "Years"
-msgstr ""
+msgstr "سنين"
 
 #: templates/website/index.html:139
 msgid "of Hard Work"
-msgstr ""
+msgstr "من العمل الشاق"
 
 #: templates/website/index.html:151 templates/website/layout.html:102
 #: website/models.py:96 website/models.py:102 website/models.py:108
@@ -170,17 +170,17 @@ msgstr ""
 msgid "Products"
 msgstr "المنتجات"
 
-#: templates/website/index.html:163 templates/website/products.html:88
+#: templates/website/index.html:163 templates/website/products.html:87
 msgid "Brands"
 msgstr "الماركات"
 
 #: templates/website/index.html:173
 msgid "Hours"
-msgstr ""
+msgstr "ساعات"
 
 #: templates/website/index.html:175
 msgid "Customer Service"
-msgstr ""
+msgstr "خدمة الزبائن"
 
 #: templates/website/index.html:192
 msgid "Need a choosing help? Read our blogs"
@@ -262,7 +262,7 @@ msgid "Brand"
 msgstr "الماركة"
 
 #: templates/website/product-detail.html:63
-#: templates/website/products.html:142
+#: templates/website/products.html:141
 msgid "Colors"
 msgstr "الألوان"
 
@@ -292,27 +292,23 @@ msgid ""
 "memories in our minds."
 msgstr "منتجات عصرية بلمسة جمالية لتحفر أجمل الذكريات في الأذهان"
 
-#: templates/website/products.html:54
-msgid "purchase now"
-msgstr "اطلب الآن"
-
-#: templates/website/products.html:76
+#: templates/website/products.html:75
 msgid "Enter Search Keywords"
 msgstr "أكتب كلمة بحث"
 
-#: templates/website/products.html:103
+#: templates/website/products.html:102
 msgid "Case Materials"
-msgstr "مادة الهيكل"
+msgstr "مواد الهيكل الخارجي"
 
-#: templates/website/products.html:116
+#: templates/website/products.html:115
 msgid "Surfaces Finishes"
-msgstr "طلاء السطح"
+msgstr "أطلية السطوح"
 
-#: templates/website/products.html:129
+#: templates/website/products.html:128
 msgid "Collections"
 msgstr "المجموعات"
 
-#: templates/website/products.html:171
+#: templates/website/products.html:170
 msgid "Our Products"
 msgstr "منتجاتنا"
 
@@ -344,11 +340,11 @@ msgstr "الشعار"
 
 #: website/models.py:85
 msgid "Specifications"
-msgstr "التخصيصات"
+msgstr "الخواص"
 
 #: website/models.py:86
 msgid "summary"
-msgstr "الخلاصة"
+msgstr "لمحة"
 
 #: website/models.py:87
 msgid "Tag"
@@ -360,57 +356,64 @@ msgstr "الصورة"
 
 #: website/models.py:101
 msgid "Case_Material"
-msgstr "مادة_الهيكل"
+msgstr "مادة الهيكل الخارجي"
 
 #: website/models.py:107
 msgid "Surface_Finishes"
-msgstr "طلاء_السطح"
+msgstr "طلاء السطح"
 
 #: website/models.py:113
 msgid "Collection"
-msgstr "تجميعات"
+msgstr "التجميعة"
 
 #: website/models.py:118
-#, fuzzy
-#| msgid "Colors"
 msgid "Color"
-msgstr "الألوان"
+msgstr "اللون"
 
 #: website/models.py:156
 msgid "Title"
 msgstr "العنوان"
 
 #: website/models.py:157
-#, fuzzy
-#| msgid "Contact"
 msgid "Content"
-msgstr "التواصل"
+msgstr "المحتوى"
 
 #: website/models.py:163
-#, fuzzy
-#| msgid "Categories"
 msgid "Category"
-msgstr "الفئات"
+msgstr "الفئة"
+
+#: website/views.py:175
+msgid "invalid email"
+msgstr "إيميل خاطئ"
 
 #: website/views.py:184
-msgid "invalid email"
-msgstr ""
-
-#: website/views.py:193
 msgid "you have already registered our newsletter"
-msgstr ""
+msgstr "انت مسجل بخدمة أخبارنا بالفعل"
 
-#: website/views.py:199
+#: website/views.py:190
 msgid "Thank you for registering to our newsletter"
-msgstr ""
+msgstr "شكراً على اشتراكك بخدمة أخبارنا"
+
+#: website/views.py:191
+msgid " From now on you'll be toned whenever we add something new"
+msgstr "من الاّن فصاعداً ستصلك اّخر أخبارنا عبر  بريدك الاكتروني هذا"
 
 #: website/views.py:200
-msgid " it  means a world to us "
-msgstr ""
-
-#: website/views.py:209
 msgid "Thanks for subscribing to our Newsletter"
-msgstr ""
+msgstr "شكراً لاشتراكك بخدمة أخبارنا"
+
+#~ msgid ""
+#~ "Since 1975, we've been weaving tales of time through the threads of your "
+#~ "life, guided by the finest colors, tools, and expertise."
+#~ msgstr ""
+#~ "منذ عام 1975, لقد نسجنا حكايات الزمن عبر خيوط حياتك، مسترشدين بأرقى الألوان "
+#~ "والأدوات والخبرات."
+
+#~ msgid "colors that fit <br> Your Personality"
+#~ msgstr "ألوان تناسب <br> شخصيتك"
+
+#~ msgid "purchase now"
+#~ msgstr "اطلب الآن"
 
 #~ msgid "Our products Categories "
 #~ msgstr "الفئات الخاصة بمنتجاتنا"

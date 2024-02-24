@@ -58,7 +58,7 @@
                             <div class="info-column col-lg-8 col-md-8 col-sm-8">
                             	<div class="inner-column">
                                     <h4>{{ product.name }}</h4>
-                                    <div class="text">{{ product.summary }}</div>
+                                    <div class="text">{{ product.summary|safe }}</div>
                                     <div class="short">{% trans 'Brand' %} : <span><img src="{{ product.brand.logo.url }}" alt="{{ product.brand.name }}" style="max-height: 2rem; background-color: #ffffff;"></span></div>
                                     <div class="short">{% trans 'Colors' %} : <span>{% for c in product.color.all %}<i> ({{ c.name }}) </i>{% endfor %}</span></div>                                    
                                 </div>
@@ -84,14 +84,14 @@
                                 <!--Tab / Active Tab-->
                                 <div class="tab active-tab" id="prod-desc">
                                     <div class="content">
-                                        <p>{{ product.desc }}</p>
+                                        <p>{{ product.desc|safe }}</p>
                                     </div>
                                 </div>
                                 
                                 <!--Tab-->
                                 <div class="tab" id="prod-spf">
                                     <div class="content">
-                                        <p>{{ product.spf }}</p>
+                                        <p>{{ product.spf|safe }}</p>
                                     </div>
                                 </div>
                             </div>

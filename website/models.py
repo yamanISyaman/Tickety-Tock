@@ -81,9 +81,9 @@ class Brand(TranslatableModel):
 class Product(TranslatableModel):
     # fields that need translation
     translations = TranslatedFields(
-        desc=models.CharField(_("Description"), max_length=1000),
-        spf=models.CharField(_("Specifications"), max_length=1000),
-        summary=models.CharField(_("summary"), max_length=500),
+        desc=models.TextField(_("Description")),
+        spf=models.TextField(_("Specifications")),
+        summary=models.TextField(_("summary")),
         tag=models.CharField(_("Tag"), max_length=20, blank=True),
     )
 

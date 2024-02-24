@@ -73,7 +73,7 @@ function createShopItem(data) {
 
   // Create a new div element with the class of shop-item and the appropriate column classes
   let item = document.createElement("div");
-  item.className = "shop-item col-lg-2 col-md-4 col-sm-12";
+  item.className = "shop-item col-lg-3 col-md-4 col-sm-12";
 
   //the style property
   item.style.visibility = "visible";
@@ -122,7 +122,7 @@ function createShopItem(data) {
   // Create the heading element with the data.name as the text content and the data.slug as the href attribute and append it to the lower-content element
   let heading = document.createElement("h3");
   let link = document.createElement("a");
-  link.href = `/${data.slug}`;
+  link.href = `/${lang}/products/${data.slug}_${data.id}`;
   link.textContent = data.name;
   heading.appendChild(link);
   lowerContent.appendChild(heading);

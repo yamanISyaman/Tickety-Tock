@@ -15,13 +15,6 @@
 
 
 {% block body %}
-    <!--Page Title-->
-    <section class="page-title" style="background-image:url({% static 'website/images/background/5.jpg' %})">
-    	<div class="auto-container">
-        	<h2>{% trans 'Artical Details' %}</h2>
-        </div>
-    </section>
-    <!--End Page Title-->
 	
 	<!--Sidebar Page Container-->
     <div class="sidebar-page-container">
@@ -45,7 +38,7 @@
                                     </ul>
                                 </div>
 								<div class="lower-box">
-									<h3>{{ post.title }}</h3>
+									<h3>{{ post.title|safe }}</h3>
 									<div class="text">
 									    {{ post.content|safe }}
                                     </div>

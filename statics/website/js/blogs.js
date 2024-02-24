@@ -101,7 +101,7 @@ function createBlogItem(data) {
     // Create h3 element inside lower-content
     let h3 = document.createElement('h3');
     let h3Link = document.createElement('a');
-    h3Link.href = `${data.slug}_${data.id}`;
+    h3Link.href = `/${lang}/blogs/${data.slug}_${data.id}`;
     h3Link.textContent = data.title;
     h3.appendChild(h3Link);
     lowerContent.appendChild(h3);
@@ -109,7 +109,7 @@ function createBlogItem(data) {
     // Create div for text
     let textDiv = document.createElement('div');
     textDiv.className = 'text';
-    textDiv.textContent = data.summary;
+    textDiv.innerHTML = data.summary;
     lowerContent.appendChild(textDiv);
 
     // Create link-box div

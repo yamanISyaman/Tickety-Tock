@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-13 10:30+0000\n"
+"POT-Creation-Date: 2024-02-24 15:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,21 +39,21 @@ msgstr ""
 msgid "Blog"
 msgstr ""
 
-#: templates/website/blog.html:74 templates/website/products.html:84
+#: templates/website/blog.html:74 templates/website/products.html:83
 msgid "Categories"
 msgstr ""
 
-#: templates/website/blog.html:79 templates/website/products.html:92
-#: templates/website/products.html:107 templates/website/products.html:120
-#: templates/website/products.html:133 templates/website/products.html:146
+#: templates/website/blog.html:79 templates/website/products.html:91
+#: templates/website/products.html:106 templates/website/products.html:119
+#: templates/website/products.html:132 templates/website/products.html:145
 msgid "All"
 msgstr ""
 
-#: templates/website/blog.html:90 templates/website/products.html:157
+#: templates/website/blog.html:90 templates/website/products.html:156
 msgid "Show All Products"
 msgstr ""
 
-#: templates/website/blog.html:101 templates/website/products.html:174
+#: templates/website/blog.html:101 templates/website/products.html:173
 msgid "Oops! Seems Empty, reset the filters or try something else"
 msgstr ""
 
@@ -79,7 +79,8 @@ msgstr ""
 msgid "Address"
 msgstr ""
 
-#: templates/website/contact.html:81 templates/website/layout.html:188
+#: templates/website/contact.html:81 templates/website/contact.html:112
+#: templates/website/layout.html:188
 msgid "Syria, Damascus, Baramkeh"
 msgstr ""
 
@@ -99,10 +100,6 @@ msgstr ""
 msgid "Sunday – Thursday"
 msgstr ""
 
-#: templates/website/contact.html:112
-msgid "Damascus, Syria, Baramkeh"
-msgstr ""
-
 #: templates/website/contact.html:114
 msgid "Sun-Thu"
 msgstr ""
@@ -115,11 +112,10 @@ msgstr ""
 msgid "We make your dream <br> style a reality"
 msgstr ""
 
-#: templates/website/index.html:43 templates/website/index.html:57
-#: templates/website/index.html:71
+#: templates/website/index.html:43
 msgid ""
-"Since 1975, we've been weaving tales of time through the threads of your "
-"life, guided by the finest colors, tools, and expertise."
+"Travel through history with our handwatches that we carefully choose since "
+"1975"
 msgstr ""
 
 #: templates/website/index.html:45 templates/website/index.html:59
@@ -128,11 +124,20 @@ msgid "Know more"
 msgstr ""
 
 #: templates/website/index.html:56
-msgid "colors that fit <br> Your Personality"
+msgid "Customer Support <br>At Any Time You Need it"
+msgstr ""
+
+#: templates/website/index.html:57
+msgid "Your satisfaction is our first goal, so don't hesitate to contact us"
 msgstr ""
 
 #: templates/website/index.html:70
-msgid "Customer Support <br>At Any Time You Need it"
+msgid " We care so <br>We share "
+msgstr ""
+
+#: templates/website/index.html:71
+msgid ""
+"stay in the loop of our latest news and offers, by following to our Blog"
 msgstr ""
 
 #: templates/website/index.html:91
@@ -161,7 +166,7 @@ msgstr ""
 msgid "Products"
 msgstr ""
 
-#: templates/website/index.html:163 templates/website/products.html:88
+#: templates/website/index.html:163 templates/website/products.html:87
 msgid "Brands"
 msgstr ""
 
@@ -243,7 +248,7 @@ msgstr ""
 msgid "Brand"
 msgstr ""
 
-#: templates/website/product-detail.html:63 templates/website/products.html:142
+#: templates/website/product-detail.html:63 templates/website/products.html:141
 msgid "Colors"
 msgstr ""
 
@@ -273,27 +278,23 @@ msgid ""
 "memories in our minds."
 msgstr ""
 
-#: templates/website/products.html:54
-msgid "purchase now"
-msgstr ""
-
-#: templates/website/products.html:76
+#: templates/website/products.html:75
 msgid "Enter Search Keywords"
 msgstr ""
 
-#: templates/website/products.html:103
+#: templates/website/products.html:102
 msgid "Case Materials"
 msgstr ""
 
-#: templates/website/products.html:116
+#: templates/website/products.html:115
 msgid "Surfaces Finishes"
 msgstr ""
 
-#: templates/website/products.html:129
+#: templates/website/products.html:128
 msgid "Collections"
 msgstr ""
 
-#: templates/website/products.html:171
+#: templates/website/products.html:170
 msgid "Our Products"
 msgstr ""
 
@@ -367,22 +368,22 @@ msgstr ""
 msgid "Category"
 msgstr ""
 
-#: website/views.py:184
+#: website/views.py:175
 msgid "invalid email"
 msgstr ""
 
-#: website/views.py:193
+#: website/views.py:184
 msgid "you have already registered our newsletter"
 msgstr ""
 
-#: website/views.py:199
+#: website/views.py:190
 msgid "Thank you for registering to our newsletter"
 msgstr ""
 
-#: website/views.py:200
-msgid " it  means a world to us "
+#: website/views.py:191
+msgid " From now on you'll be toned whenever we add something new"
 msgstr ""
 
-#: website/views.py:209
+#: website/views.py:200
 msgid "Thanks for subscribing to our Newsletter"
 msgstr ""

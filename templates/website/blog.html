@@ -8,7 +8,7 @@
 {% if current_language == "ar" %}
 {% block style %}
 
-    .shop-pagination .next, .shop-pagination .prev{
+    .blog-pagination .next, .blog-pagination .prev{
         rotate: 180deg;
     }
     .shop-banner-section, .sidebar-page-container {
@@ -63,7 +63,7 @@
                         <!-- Search -->
                         <div class="sidebar-widget search-box">
                             <div class="form-group">
-                                    <input type="search" id="search" name="search-field" value="" placeholder="Enter Search Keywords" required="">
+                                    <input type="search" id="search" name="search-field" value="" placeholder="{% trans 'Enter Search Keywords' %}" required="">
                                     <button><span class="icon fa fa-search"></span></button>
                             </div>
                         </div>

@@ -58,7 +58,7 @@ def products_view(request):
         )
 
         # make a paginator
-        pg = Paginator(products, 1)
+        pg = Paginator(products, 12)
 
         p = pg.page(page)
 
@@ -125,7 +125,7 @@ def blogs_view(request):
         )
 
         # make a paginator
-        pg = Paginator(blogs, 1)
+        pg = Paginator(blogs, 5)
 
         p = pg.page(page)
 
@@ -161,19 +161,9 @@ def blog_detail(request, slug, id):
     return render(request, "website/blog-detail.html", {"post": post, "sposts": sposts})
 
 
-def email(request):
-    subject = "Thank you for registering to our site"
-    message = " it  means a world to us "
-    email_from = settings.EMAIL_HOST_USER
-    recipient_list = []
-    send_mail(subject, message, email_from, recipient_list)
-    return redirect("index")
-
-
 @csrf_exempt
 def subscribe(request):
     if request.method == "POST":
-        print(request.body)
 
         data = json.loads(request.body)
 
@@ -197,7 +187,7 @@ def subscribe(request):
             )
 
         subject = _("Thank you for registering to our newsletter")
-        message = _(" it  means a world to us ")
+        message = _(" From now on you'll be toned whenever we add something new")
         email_from = settings.EMAIL_HOST_USER
         recipient_list = [
             email,
@@ -217,7 +207,6 @@ def subscribe(request):
 
 def contact_view(request):
     if request.method == "POST":
-        print(request.POST["email"])
         data = request.POST
 
         send_mail(
