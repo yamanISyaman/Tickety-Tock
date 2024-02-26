@@ -47,23 +47,23 @@
                                 {% csrf_token %}
 								<div class="row clearfix">
 									<div class="form-group col-lg-6 col-md-6 col-sm-12">
-										<input type="text" name="username" placeholder="Your name" required>
+										<input type="text" name="username" placeholder="{% trans 'Your name' %}" required>
 									</div>
 									
 									<div class="form-group col-lg-6 col-md-6 col-sm-12">
-										<input type="text" name="email" placeholder="Email address" required>
+										<input type="text" name="email" placeholder="{% trans 'Email address' %}" required>
 									</div>
 									
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<input type="text" name="subject" placeholder="Subject" required>
+										<input type="text" name="subject" placeholder="{% trans 'Subject' %}" required>
 									</div>
 									
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<textarea name="message" placeholder="Message"></textarea>
+										<textarea name="message" placeholder="{% trans 'Message' %}"></textarea>
 									</div>
 									
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">Submit now</span></button>
+										<button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">{% trans 'Submit now' %}</span></button>
 									</div>
 								</div>
 							</form>

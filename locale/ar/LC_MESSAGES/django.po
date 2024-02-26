@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-24 15:11+0000\n"
-"PO-Revision-Date: 2024-02-24 15:16+0000\n"
+"POT-Creation-Date: 2024-02-25 12:55+0000\n"
+"PO-Revision-Date: 2024-02-26 11:01+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -23,11 +23,7 @@ msgstr ""
 msgid "Tickety Tock - Artical"
 msgstr "تيكيتي توك - مقال"
 
-#: templates/website/blog-detail.html:21
-msgid "Artical Details"
-msgstr "تفاصيل التدوينة"
-
-#: templates/website/blog-detail.html:64
+#: templates/website/blog-detail.html:57
 msgid "Recent Articals"
 msgstr "المقالات الجديدة"
 
@@ -39,6 +35,10 @@ msgstr "تيكيتي توك - المدونة"
 #: website/models.py:163
 msgid "Blog"
 msgstr "المدونة"
+
+#: templates/website/blog.html:66 templates/website/products.html:75
+msgid "Enter Search Keywords"
+msgstr "أكتب كلمة بحث"
 
 #: templates/website/blog.html:74 templates/website/products.html:83
 msgid "Categories"
@@ -78,6 +78,27 @@ msgstr ""
 "هل تفكر بشيء يجب أن نعرفه؟ لطفاً لا تتأخر في التواصل معنا عن طريق وسائل "
 "التواصل المتوفرة"
 
+#: templates/website/contact.html:50
+msgid "Your name"
+msgstr "اسمك الكامل"
+
+#: templates/website/contact.html:54
+#| msgid "Enter your email address"
+msgid "Email address"
+msgstr "بريدك الإلكتروني"
+
+#: templates/website/contact.html:58
+msgid "Subject"
+msgstr "العنوان"
+
+#: templates/website/contact.html:62
+msgid "Message"
+msgstr "الرسالة"
+
+#: templates/website/contact.html:66
+msgid "Submit now"
+msgstr "أرسل الاّن"
+
 #: templates/website/contact.html:81
 msgid "Address"
 msgstr "العنوان"
@@ -91,7 +112,7 @@ msgstr "سوريا، دمشق، برامكة"
 msgid "Phone"
 msgstr "الهاتف"
 
-#: templates/website/contact.html:86
+#: templates/website/contact.html:86 templates/website/layout.html:189
 msgid "Email"
 msgstr "الإيميل"
 
@@ -152,60 +173,59 @@ msgstr "منتجاتنا المتميزة"
 msgid "Here are some of our products that you would like"
 msgstr "هذه بعض منتجاتنا التي قد تعجبك"
 
-#: templates/website/index.html:107 templates/website/index.html:212
+#: templates/website/index.html:107 templates/website/index.html:206
 msgid "Read more"
 msgstr "اقرأ المزيد"
 
-#: templates/website/index.html:137
+#: templates/website/index.html:131
 msgid "Years"
-msgstr "سنين"
+msgstr "سنة"
 
-#: templates/website/index.html:139
+#: templates/website/index.html:133
 msgid "of Hard Work"
 msgstr "من العمل الشاق"
 
-#: templates/website/index.html:151 templates/website/layout.html:102
+#: templates/website/index.html:145 templates/website/layout.html:102
 #: website/models.py:96 website/models.py:102 website/models.py:108
 #: website/models.py:114 website/models.py:118
 msgid "Products"
 msgstr "المنتجات"
 
-#: templates/website/index.html:163 templates/website/products.html:87
+#: templates/website/index.html:157 templates/website/products.html:87
 msgid "Brands"
 msgstr "الماركات"
 
-#: templates/website/index.html:173
+#: templates/website/index.html:167
 msgid "Hours"
-msgstr "ساعات"
+msgstr "ساعة"
 
-#: templates/website/index.html:175
+#: templates/website/index.html:169
 msgid "Customer Service"
 msgstr "خدمة الزبائن"
 
-#: templates/website/index.html:192
+#: templates/website/index.html:186
 msgid "Need a choosing help? Read our blogs"
 msgstr "هل تحتاج لمساعدة في الإختيار؟ اقرأ مدوناتنا"
 
-#: templates/website/index.html:193
+#: templates/website/index.html:187
 msgid "Stay updated with latest trends, inspiration, expert tips and more"
 msgstr "ابقى مطلعاً على آخر الأحداث والأفكار ونصائح الخبراء وأكثر"
 
-#: templates/website/index.html:226
+#: templates/website/index.html:220
 msgid "All that and more"
 msgstr "كل هذا وأكثر"
 
-#: templates/website/index.html:227
-#, fuzzy
+#: templates/website/index.html:221
 #| msgid ""
 #| "Hand WAtches for all styles and budgets, Choose from thousands of"
 msgid "Hand Watches for all styles and budgets, Choose from thousands of"
 msgstr "ساعات يدوية من كل الأشكال و الأسعار, اختر من بين الآلاف من"
 
-#: templates/website/index.html:227
+#: templates/website/index.html:221
 msgid "colors, brands and categories"
 msgstr "الألوان والماركات والفئات"
 
-#: templates/website/index.html:228
+#: templates/website/index.html:222
 msgid "contact us"
 msgstr "تواصل معنا"
 
@@ -222,7 +242,7 @@ msgid ""
 "Tickety Tock was opened in 1975 as one small store and every year our name "
 "is spreading wider and wider"
 msgstr ""
-"تيكيتي توك أفتتح عام 1975 كمتجر صغير وكل عام أسمنا ينتشر في العالم أكثر "
+"تيكيتي توك أفتتح عام 1975 كمتجر صغير وكل عام اسمنا ينتشر في العالم أكثر "
 "فأكثر"
 
 #: templates/website/layout.html:184
@@ -234,7 +254,6 @@ msgid "Newsletter"
 msgstr "خدمة الأخبار"
 
 #: templates/website/layout.html:199
-#, fuzzy
 #| msgid "Stay in touch with our latest news and products"
 msgid "Stay in touch with our latest news and offers"
 msgstr "ابقى على اطلاع بآخر أخبارنا ومنتجاتنا"
@@ -248,7 +267,6 @@ msgid "Subscribe"
 msgstr "اشترك"
 
 #: templates/website/product-detail.html:6
-#, fuzzy
 #| msgid "Tickety Tock - Products"
 msgid "Tickety Tock - Product"
 msgstr "تيكيتي توك - المنتجات"
@@ -272,7 +290,7 @@ msgstr "الوصف"
 
 #: templates/website/product-detail.html:78
 msgid "Specification"
-msgstr "تخصيصات"
+msgstr "الخواص"
 
 #: templates/website/product-detail.html:116
 msgid "Related Products"
@@ -291,10 +309,6 @@ msgid ""
 "Modern products with an aesthetic touch to engrave the most beautiful "
 "memories in our minds."
 msgstr "منتجات عصرية بلمسة جمالية لتحفر أجمل الذكريات في الأذهان"
-
-#: templates/website/products.html:75
-msgid "Enter Search Keywords"
-msgstr "أكتب كلمة بحث"
 
 #: templates/website/products.html:102
 msgid "Case Materials"
@@ -382,25 +396,28 @@ msgstr "المحتوى"
 msgid "Category"
 msgstr "الفئة"
 
-#: website/views.py:175
+#: website/views.py:174
 msgid "invalid email"
 msgstr "إيميل خاطئ"
 
-#: website/views.py:184
+#: website/views.py:183
 msgid "you have already registered our newsletter"
 msgstr "انت مسجل بخدمة أخبارنا بالفعل"
 
-#: website/views.py:190
+#: website/views.py:189
 msgid "Thank you for registering to our newsletter"
 msgstr "شكراً على اشتراكك بخدمة أخبارنا"
 
-#: website/views.py:191
+#: website/views.py:190
 msgid " From now on you'll be toned whenever we add something new"
 msgstr "من الاّن فصاعداً ستصلك اّخر أخبارنا عبر  بريدك الاكتروني هذا"
 
-#: website/views.py:200
+#: website/views.py:199
 msgid "Thanks for subscribing to our Newsletter"
 msgstr "شكراً لاشتراكك بخدمة أخبارنا"
+
+#~ msgid "Artical Details"
+#~ msgstr "تفاصيل التدوينة"
 
 #~ msgid ""
 #~ "Since 1975, we've been weaving tales of time through the threads of your "

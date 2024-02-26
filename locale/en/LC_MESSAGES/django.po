@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-24 15:11+0000\n"
+"POT-Creation-Date: 2024-02-25 12:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,7 @@ msgstr ""
 msgid "Tickety Tock - Artical"
 msgstr ""
 
-#: templates/website/blog-detail.html:21
-msgid "Artical Details"
-msgstr ""
-
-#: templates/website/blog-detail.html:64
+#: templates/website/blog-detail.html:57
 msgid "Recent Articals"
 msgstr ""
 
@@ -37,6 +33,10 @@ msgstr ""
 #: templates/website/blog.html:49 templates/website/layout.html:104
 #: website/models.py:163
 msgid "Blog"
+msgstr ""
+
+#: templates/website/blog.html:66 templates/website/products.html:75
+msgid "Enter Search Keywords"
 msgstr ""
 
 #: templates/website/blog.html:74 templates/website/products.html:83
@@ -75,6 +75,26 @@ msgid ""
 "connect to us by means of our contact form."
 msgstr ""
 
+#: templates/website/contact.html:50
+msgid "Your name"
+msgstr ""
+
+#: templates/website/contact.html:54
+msgid "Email address"
+msgstr ""
+
+#: templates/website/contact.html:58
+msgid "Subject"
+msgstr ""
+
+#: templates/website/contact.html:62
+msgid "Message"
+msgstr ""
+
+#: templates/website/contact.html:66
+msgid "Submit now"
+msgstr ""
+
 #: templates/website/contact.html:81
 msgid "Address"
 msgstr ""
@@ -88,7 +108,7 @@ msgstr ""
 msgid "Phone"
 msgstr ""
 
-#: templates/website/contact.html:86
+#: templates/website/contact.html:86 templates/website/layout.html:189
 msgid "Email"
 msgstr ""
 
@@ -148,57 +168,57 @@ msgstr ""
 msgid "Here are some of our products that you would like"
 msgstr ""
 
-#: templates/website/index.html:107 templates/website/index.html:212
+#: templates/website/index.html:107 templates/website/index.html:206
 msgid "Read more"
 msgstr ""
 
-#: templates/website/index.html:137
+#: templates/website/index.html:131
 msgid "Years"
 msgstr ""
 
-#: templates/website/index.html:139
+#: templates/website/index.html:133
 msgid "of Hard Work"
 msgstr ""
 
-#: templates/website/index.html:151 templates/website/layout.html:102
+#: templates/website/index.html:145 templates/website/layout.html:102
 #: website/models.py:96 website/models.py:102 website/models.py:108
 #: website/models.py:114 website/models.py:118
 msgid "Products"
 msgstr ""
 
-#: templates/website/index.html:163 templates/website/products.html:87
+#: templates/website/index.html:157 templates/website/products.html:87
 msgid "Brands"
 msgstr ""
 
-#: templates/website/index.html:173
+#: templates/website/index.html:167
 msgid "Hours"
 msgstr ""
 
-#: templates/website/index.html:175
+#: templates/website/index.html:169
 msgid "Customer Service"
 msgstr ""
 
-#: templates/website/index.html:192
+#: templates/website/index.html:186
 msgid "Need a choosing help? Read our blogs"
 msgstr ""
 
-#: templates/website/index.html:193
+#: templates/website/index.html:187
 msgid "Stay updated with latest trends, inspiration, expert tips and more"
 msgstr ""
 
-#: templates/website/index.html:226
+#: templates/website/index.html:220
 msgid "All that and more"
 msgstr ""
 
-#: templates/website/index.html:227
+#: templates/website/index.html:221
 msgid "Hand Watches for all styles and budgets, Choose from thousands of"
 msgstr ""
 
-#: templates/website/index.html:227
+#: templates/website/index.html:221
 msgid "colors, brands and categories"
 msgstr ""
 
-#: templates/website/index.html:228
+#: templates/website/index.html:222
 msgid "contact us"
 msgstr ""
 
@@ -276,10 +296,6 @@ msgstr ""
 msgid ""
 "Modern products with an aesthetic touch to engrave the most beautiful "
 "memories in our minds."
-msgstr ""
-
-#: templates/website/products.html:75
-msgid "Enter Search Keywords"
 msgstr ""
 
 #: templates/website/products.html:102
@@ -368,22 +384,22 @@ msgstr ""
 msgid "Category"
 msgstr ""
 
-#: website/views.py:175
+#: website/views.py:174
 msgid "invalid email"
 msgstr ""
 
-#: website/views.py:184
+#: website/views.py:183
 msgid "you have already registered our newsletter"
 msgstr ""
 
-#: website/views.py:190
+#: website/views.py:189
 msgid "Thank you for registering to our newsletter"
 msgstr ""
 
-#: website/views.py:191
+#: website/views.py:190
 msgid " From now on you'll be toned whenever we add something new"
 msgstr ""
 
-#: website/views.py:200
+#: website/views.py:199
 msgid "Thanks for subscribing to our Newsletter"
 msgstr ""
