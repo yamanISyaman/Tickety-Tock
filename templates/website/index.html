@@ -56,7 +56,7 @@
 							<h2>{% blocktrans %}Customer Support <br>At Any Time You Need it{% endblocktrans %}</h2>
                             <div class="text">{% trans "Your satisfaction is our first goal, so don't hesitate to contact us" %}</div>
 							<div class="btns-box">
-								<a href="#" class="theme-btn btn-style-one"><span class="txt">{% trans "Know more" %}</span></a>
+								<a href="{% url 'contact' %}" class="theme-btn btn-style-one"><span class="txt">{% trans "Know more" %}</span></a>
 							</div>
 						</div>
 					</div>
@@ -70,7 +70,7 @@
 							<h2>{% blocktrans %} We care so <br>We share {% endblocktrans %}</h2>
                             <div class="text">{% trans "stay in the loop of our latest news and offers, by following to our Blog" %}</div>
 							<div class="btns-box">
-								<a href="#" class="theme-btn btn-style-one"><span class="txt">{% trans "Know more" %}</span></a>
+								<a href="{% url 'blogs' %}" class="theme-btn btn-style-one"><span class="txt">{% trans "Know more" %}</span></a>
 							</div>
 						</div>
 					</div>
