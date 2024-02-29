@@ -1,7 +1,9 @@
 from pathlib import Path
-from configurations import Configuration
+from configurations import Configuration, importer
 from django.utils.translation import gettext_lazy as _
 import os
+
+importer.install()
 
 
 class Dev(Configuration):
@@ -151,10 +153,12 @@ class Dev(Configuration):
 
 
 class Prod(Dev):
-    
+
     BASE_DIR = Path(__file__).resolve().parent.parent
-    
+
     DEBUG = False
-    
+
+    ALLOWED_HOSTS = ["*"]
+
     STATICFILES_DIRS = ()
     STATIC_ROOT = BASE_DIR / 'statics'
